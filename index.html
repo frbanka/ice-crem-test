@@ -5,12 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/modern-normalize.css" rel="stylesheet" />
-    <!--fonty-->
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.min.css" />
     <title>Ice Cream</title>
   </head>
   <body>
-    <header class="header hero-leader"></header>
+    <header class="header mobile-header">
+      <nav class="header__nav-mobile">
+        <div class="header__logo"><picture>
+          <source
+                  srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/menu-logo.png" alt="page logo" />
+        </picture></div>
+        <button type="button" class="header__burger js-open-menu" aria-expanded="false"
+          aria-controls="mobilemenu"><svg height="12px" width="20px"><use href="./images/icons.svg#icon-burger"></use></svg></button>
+      </nav>
+      <div class="header__banner">
+        <div class="header__banner-background"><picture>
+          <source
+                  srcset="./images/banner-elipse.png 1x, ./images/banner-elipse@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/banner-elipse.png 1x, ./images/banner-elipse@2x.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/banner-elipse.png 1x, ./images/banner-elipse@2x.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img id="pic1" src="./images/banner-elipse.png" alt="elipse" />
+        </picture>
+        <picture>
+          <source
+                  srcset="./images/banner-icecream.png 1x, ./images/banner-icecream@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/banner-icecream.png 1x, ./images/banner-icecream@2x.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/banner-icecream.png 1x, ./images/banner-icecream@2x.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img id="pic2" src="./images/banner-icecream.png" alt="icecream" />
+        </picture></div>
+        <div class="header__banner-title">
+          <h1>ICE CREAM MADE WITH <span class="header__banner-title--red">PASSION</span></h1>
+          <div class="header__banner-buttons">
+          <button class="header__banner-button1">Products</button>
+          <button class="header__banner-button2">How it's made?</button>
+          </div>
+        </div>
+        </div>
+    </header>
+  </header>
     <main class="main">
       <section class="section products"></section>
       <section class="section about"></section>
@@ -21,7 +83,34 @@
       <section class="section contacts"></section>
     </main>
     <footer class="footer"></footer>
-    <section class="modal-buy-now"></section>
-    <!--JS-->
+    <div class="mobile-menu js-menu-container" id="mobilemenu">  
+			<button class="mobile-menu__close js-close-menu">
+				<svg height="14px" width="14px">
+              <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+			</button>
+				<div class="mobile-menu__item">
+					<div class="mobile-menu__center">
+          <button type="button" class="mobile-menu__button"><div class="mobile-menu__button--gap">Buy now<svg height="8px" width="5px"><use href="/images/icons.svg#icon-mobile-button"></use></svg></div></button></div>
+				<ul class="mobile-menu__links">
+					<li class="mobile-menu__links-item">
+						<a class="mobile-menu__link mobile-menu__link--current" href="">Home</a>
+					</li>
+					<li class="mobile-menu__links-item">
+						<a class="mobile-menu__link" href="">About us</a>
+					</li>
+					<li class="mobile-menu__links-item">
+						<a class="mobile-menu__link" href="">How it's made?</a>
+					</li>
+					<li class="mobile-menu__links-item">
+						<a class="mobile-menu__link" href="">Our products</a>
+					</li>
+					<li class="mobile-menu__links-item">
+						<a class="mobile-menu__link" href="">Contact</a>
+					</li>
+				</ul>
+        </div>
+		</div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
