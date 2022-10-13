@@ -1,4 +1,4 @@
-/*do common*/
+/*common*/
 *,
 *::after,
 *::before {
@@ -22,12 +22,12 @@ h1 {
   font-size: 26px;
   line-height: 30px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white);
 }
-/*/do common/*/
+/*/common/*/
 .header {
   height: 502px;
-  background-color: #ffb8ca;
+  background-color: var(--main-pink);
   display: flex;
   flex-direction: column;
   &__nav-mobile {
@@ -78,7 +78,7 @@ h1 {
       left: 20px;
       top: 137px;
       &--red {
-        color: #d41443;
+        color: var(--main-red);
         font-size: 48px;
         line-height: 46px;
       }
@@ -89,7 +89,7 @@ h1 {
       gap: 8px;
     }
     &-button1 {
-      background: #d41443;
+      background: var(--main-red);
       border-radius: 20px;
       border: none;
       width: 62px;
@@ -99,10 +99,10 @@ h1 {
       font-weight: 400;
       font-size: 8px;
       line-height: 10px;
-      color: #ffffff;
+      color: var(--white);
     }
     &-button2 {
-      background: #ffffff;
+      background: var(--white);
       border-radius: 20px;
       border: none;
       width: 83px;
@@ -112,7 +112,7 @@ h1 {
       font-weight: 400;
       font-size: 8px;
       line-height: 10px;
-      color: #d41443;
+      color: var(--main-red);
     }
   }
 }
@@ -129,7 +129,7 @@ h1 {
   width: 100%;
   height: 100%;
   padding: 60px 0px 0px 0px;
-  background-color: #e17992;
+  background-color: var(--menu-pink);
   z-index: 20;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -164,9 +164,9 @@ h1 {
       display: flex;
       width: 100%;
       height: 42px;
-      border-top: 1px solid #e18298;
+      border-top: 1px solid var(--light-pink);
       &:nth-child(5) {
-        border-bottom: 1px solid #e18298;
+        border-bottom: 1px solid var(--light-pink);
       }
     }
   }
@@ -179,16 +179,16 @@ h1 {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color: #ffffff;
+    color: var(--white);
     padding: 0px 0px 0px 21px;
     &--current {
-      color: #d41443;
+      color: var(--main-red);
     }
   }
   &__button {
     width: 209px;
     height: 44px;
-    background: #ffffff;
+    background: var(--white);
     border-radius: 22px;
     border: none;
     font-family: "DM Sans";
@@ -196,7 +196,7 @@ h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    color: #d41443;
+    color: var(--main-red);
     &--gap {
       display: flex;
       justify-content: center;
