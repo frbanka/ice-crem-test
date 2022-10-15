@@ -33,7 +33,7 @@
           aria-controls="mobilemenu"><svg height="12px" width="20px"><use href="./images/icons.svg#icon-burger"></use></svg></button>
       </nav>
       <div class="header__banner">
-        <div class="header__banner-background"><picture>
+        <div class="header__banner-background"><picture id="pic1">
           <source
                   srcset="./images/banner-elipse.png 1x, ./images/banner-elipse@2x.png 2x"
                   media="(min-width: 1280px)"
@@ -46,9 +46,9 @@
                   srcset="./images/banner-elipse.png 1x, ./images/banner-elipse@2x.png 2x"
                   media="(min-width: 320px)"
                 />
-                <img id="pic1" src="./images/banner-elipse.png" alt="elipse" />
+                <img src="./images/banner-elipse.png" alt="elipse" />
         </picture>
-        <picture>
+        <picture id="pic2">
           <source
                   srcset="./images/banner-icecream.png 1x, ./images/banner-icecream@2x.png 2x"
                   media="(min-width: 1280px)"
@@ -61,7 +61,7 @@
                   srcset="./images/banner-icecream.png 1x, ./images/banner-icecream@2x.png 2x"
                   media="(min-width: 320px)"
                 />
-                <img id="pic2" src="./images/banner-icecream.png" alt="icecream" />
+                <img src="./images/banner-icecream.png" alt="icecream" />
         </picture></div>
         <div class="header__banner-title">
           <h1>ICE CREAM MADE WITH <span class="header__banner-title--red">PASSION</span></h1>
@@ -165,10 +165,22 @@
             <h2 class="about__title">How it's made?</h2>
           </div>
           <div class="about__content">
-            <img
-              class="about__img"
-              src="./images/home-pic@2x.png"
-              alt="cow and milk" />
+            <picture class="about__img">
+          <source
+                  srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/home-pic@1x.png" alt="cow" />
+        </picture>
+
             <div class="about__items">
               <p class="about__intro">
                 Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -264,7 +276,7 @@
         <h3 class="customer-reviews__title">Emily, Los Angeles</h3>
         <div class="customer-reviews__dots-menu">
           <div class="customer-reviews__dot"></div>
-          <div class="customer-reviews__home"></div>
+          <svg class="customer-reviews__home" width="13px" height="12px"><use href="/images/icons.svg#home"></use></svg>
           <div class="customer-reviews__dot"></div>
         </div>
       </section>

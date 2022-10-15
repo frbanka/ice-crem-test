@@ -50,19 +50,16 @@ h1 {
       z-index: 1;
       display: flex;
       position: absolute;
-      picture img#pic1 {
+      picture#pic1 {
         z-index: 3;
         width: 344px;
         height: 346px;
-        left: 100px;
-        top: 20px;
+        top: 20%;
       }
-      picture img#pic2 {
+      picture#pic2 {
         z-index: 4;
         width: 171px;
         height: 410px;
-        top: 36px;
-        left: 20%;
       }
     }
     &-title {

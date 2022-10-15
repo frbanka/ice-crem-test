@@ -82,19 +82,16 @@ h1 {
   display: flex;
   position: absolute;
 }
-.header__banner-background picture img#pic1 {
+.header__banner-background picture#pic1 {
   z-index: 3;
   width: 344px;
   height: 346px;
-  left: 100px;
-  top: 20px;
+  top: 20%;
 }
-.header__banner-background picture img#pic2 {
+.header__banner-background picture#pic2 {
   z-index: 4;
   width: 171px;
   height: 410px;
-  top: 36px;
-  left: 20%;
 }
 .header__banner-title {
   z-index: 10;
@@ -475,11 +472,20 @@ p {
 }
 .about {
   min-width: 320px;
+  width: 100%;
   height: 100%;
+  margin: 0 auto;
   background-color: var(--color-background);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.about__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .about__head {
   width: 200px;
@@ -512,10 +518,7 @@ p {
   color: var(--color-title);
 }
 .about__img {
-  display: flex;
-  align-items: center;
   width: 100%;
-  padding: 0 20px 46px 20px;
 }
 .about__items {
   padding-left: 50px;
@@ -565,6 +568,17 @@ p {
     min-width: 772px;
     height: 1254px;
   }
+  .about__content {
+    flex-direction: row;
+    gap: 19px;
+  }
+  .about__img {
+    min-width: 340px;
+    padding-left: 39px;
+  }
+  .about__items {
+    padding: 100px 36px 0px 0px;
+  }
   .about__head {
     width: 440px;
     padding-top: 130px;
@@ -578,15 +592,6 @@ p {
   .about__title {
     font-size: 48px;
     line-height: 55px;
-  }
-  .about__content {
-    display: flex;
-  }
-  .about__img {
-    padding: 0;
-  }
-  .about__items {
-    padding: 50px 36px 0 17px;
   }
   .about__intro {
     min-width: 340px;
@@ -804,8 +809,8 @@ p {
   padding-right: 16px;
   width: 62%;
   background-image: linear-gradient(rgb(225, 225, 225) 1px, transparent 0px);
-  background-size: 50% 1.95em;
-  background-position-y: 1.5rem;
+  background-size: 50% 2.55em;
+  background-position-y: 1.8rem;
 }
 .customer-reviews__text {
   position: relative;
@@ -826,22 +831,19 @@ p {
 }
 .customer-reviews__dots-menu {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
+  gap: 18px;
 }
 .customer-reviews__dot {
   background-color: rgb(217, 217, 217);
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin: 0 9px;
 }
 .customer-reviews__home {
-  background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8449 5.85484C13.0696 5.60772 13.0479 5.22897 12.7964 5.00908L7.25687 0.161935C7.00543 -0.0579491 6.60231 -0.0533429 6.35616 0.172319L0.797761 5.26751C0.551613 5.49318 0.539532 5.87145 0.771013 6.11206L0.91037 6.25719C1.14157 6.49781 1.51527 6.52649 1.74453 6.32107L2.15994 5.94907V11.3953C2.15994 11.7295 2.43069 12 2.7646 12H4.93127C5.26518 12 5.53594 11.7295 5.53594 11.3953V7.58515H8.29956V11.3953C8.29475 11.7292 8.53367 11.9998 8.86757 11.9998H11.1637C11.4976 11.9998 11.7684 11.7292 11.7684 11.3951V6.02575C11.7684 6.02575 11.8831 6.12628 12.0247 6.25069C12.166 6.37485 12.4627 6.2753 12.6874 6.02794L12.8449 5.85484Z' fill='%23D31342'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 13px;
-  width: 20px;
-  height: 20px;
-  margin: 0 9px;
+  width: 13px;
+  height: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -865,8 +867,8 @@ p {
     padding-left: 20px;
     padding-right: 44px;
     width: 80%;
-    background-size: 50% 2.05em;
-    background-position-y: 1.52rem;
+    background-size: 50% 2.52em;
+    background-position-y: 1.8rem;
   }
   .customer-reviews__text {
     font-size: 14px;
@@ -895,7 +897,7 @@ p {
   .customer-reviews__paper {
     padding-left: 28px;
     padding-right: 35px;
-    background-position-y: 1.59rem;
+    background-position-y: 1.75rem;
   }
   .customer-reviews__text {
     font-size: 16px;
