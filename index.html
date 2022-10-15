@@ -36,7 +36,9 @@
         </div>
         <div class="header__desktop-menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#">Home</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__item--current">Home</a>
+            </li>
             <li class="menu__item"><a href="#aboutus">About us</a></li>
             <li class="menu__item">
               <a href="#how-its-made">How it's made?</a>
@@ -129,14 +131,14 @@
       </div>
       <div class="header__counters-container">
         <div class="header__counter-container">
-          <svg class="" width="30" height="30">
+          <svg>
             <use href="./images/icons.svg#ellipse-white"></use>
           </svg>
           <span class="header__counter" id="cafes">16</span>
           <span class="header__counter-title">cafes</span>
         </div>
         <div class="header__counter-container">
-          <svg class="" width="30" height="30">
+          <svg>
             <use href="./images/icons.svg#ellipse-white"></use>
           </svg>
           <span class="header__counter" id="food-trucks">23</span>
@@ -176,10 +178,7 @@
           <figcaption>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
-            <button class="header__circle-button">
-              <!-- <svg width="26" height="26">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg> -->
+            <button type="button" class="header__circle-button">
               <img
                 src="./images/arrow-right@2x.png"
                 alt="arrow right button"
