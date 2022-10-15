@@ -56,6 +56,7 @@ h1 {
 /*/common/*/
 .header {
   height: 502px;
+  max-width: 1280px;
   background-color: var(--main-pink);
   display: flex;
   flex-direction: column;
@@ -374,19 +375,13 @@ p {
   background: white;
   border: none;
   border-radius: 50%;
+  transform: scale(1);
+  transition: 500ms transform ease;
 }
-.product-button:hover {
-  background-color: #d41443;
-  cursor: pointer;
-}
-.product-button:hover .product-button__icon {
-  fill: white;
-}
-
-.product-button__icon {
-  width: 15px;
-  height: 15px;
-  fill: #d41443;
+.product-button:hover,
+.product-button :focus {
+  transform: scale(0.6);
+  transition: 500ms transform ease;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
