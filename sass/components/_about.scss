@@ -65,7 +65,6 @@
     font-size: 12px;
     line-height: 19px;
     color: var(--color-paragraph-dark);
-    margin-bottom: 47px;
   }
 
   &__paragraph {
@@ -139,20 +138,16 @@
     }
 
     &__intro {
-      min-width: 340px;
-      // height: 79px;
-      margin-bottom: 49px;
+      max-width: 340px;
       font-size: 14px;
       line-height: 25px;
       // padding-right: 36px;
     }
 
     &__paragraph {
-      min-width: 340px;
-      // height: 155px;
+      max-width: 340px;
       font-size: 14px;
       line-height: 25px;
-      // padding-right: 36px;
     }
 
     &__btn {
