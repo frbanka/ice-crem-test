@@ -1,0 +1,70 @@
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 22px;
+  padding: 11px 37px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  color: $color-text-red;
+
+&-contacts {
+  text-align: center;
+  @media screen and (max-width: 767.9px) {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+&__locations {
+  color: $color-text-white;
+  background-color: $color-text-red;
+  @media screen and (max-width: 767.9px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $color-hoverfocus-red;
+  }
+}
+&-contacts__franchise {
+  &:hover,
+  &:focus {
+    background-color: $color-hoverfocus-gray;
+  }
+}
+&--modification {
+  font-weight: 700;
+  min-width: 162px;
+  padding: 11px 0px;
+  @media screen and (min-width: 768px) {
+    min-width: 190px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 195px;
+  }
+}
+.button-contacts__svg {
+  margin-left: 13px;
+  height: 9px;
+  width: 6px;
+}
+&--color-white {
+  fill: $color-text-white;
+}
+&--color-red {
+  fill: $color-text-red;
+}
+}
+}

@@ -27,6 +27,7 @@ h1 {
 /*/common/*/
 .header {
   height: 502px;
+  max-width: 1280px;
   background-color: var(--main-pink);
   display: flex;
   flex-direction: column;
@@ -48,22 +49,20 @@ h1 {
     &-background {
       z-index: 1;
       display: flex;
-      position: relative;
+      position: absolute;
       picture img#pic1 {
-        z-index: 2;
-        position: absolute;
+        z-index: 3;
         width: 344px;
         height: 346px;
-        left: -117px;
-        top: 23px;
+        left: 100px;
+        top: 20px;
       }
       picture img#pic2 {
         z-index: 4;
-        position: absolute;
         width: 171px;
         height: 410px;
         top: 36px;
-        left: -40px;
+        left: 20%;
       }
     }
     &-title {

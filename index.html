@@ -91,9 +91,21 @@
               </p>
 
               <button class="product-button" onclick="plusDivs(+1)" type="button">
-                <svg class="product-button__icon">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
+                <picture>
+          <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/arrow.png" alt="icecream" />
+        </picture>
               </button>
             </li>
             <li class="product product--coffee">
@@ -103,9 +115,21 @@
                 incididunt ut labore et. dolore magna aliqua facilisis.
               </p>
               <button class="product-button" type="button">
-                <svg class="product-button__icon">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
+                <picture>
+          <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/arrow.png" alt="icecream" />
+        </picture>
               </button>
             </li>
             <li class="product product--milkshake">
@@ -115,20 +139,222 @@
                 incididunt ut labore et. dolore magna aliqua facilisis.
               </p>
               <button class="product-button" type="button">
-                <svg class="product-button__icon">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
+                <picture>
+          <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/arrow.png" alt="icecream" />
+        </picture>
               </button>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section about"></section>
-      <section class="advantages"></section>
-      <section class="section gallery"></section>
-      <section class="section customer-reviews"></section>
-      <section class="section locations"></section>
-      <section class="section contacts"></section>
+      <section class="section about">
+          <div class="about__head">
+            <label class="about__label"> Tradition and Love </label>
+            <h2 class="about__title">How it's made?</h2>
+          </div>
+          <div class="about__content">
+            <img
+              class="about__img"
+              src="./images/home-pic@2x.png"
+              alt="cow and milk" />
+            <div class="about__items">
+              <p class="about__intro">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                eleifend erat at justo fringilla.
+              </p>
+              <p class="about__paragraph">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                Cras massa nibh, tincidunt. <br />
+                <br />
+                Aliquam erat volutpat. Aenean accumsan.
+              </p>
+              <button class="about__btn" type="button">Read more</button>
+            </div>
+          </div>
+          <div class="advantages">
+            <h2 class="advantages__title">Advantages</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <img id="adv1"
+                  class="advantages__img"
+                  src="./images/icon1@1x.png"
+                  alt="Advantages icon" />
+                <div class="advantages__desc">
+                  <p class="advantages__img-title">721</p>
+                  <p class="advantages__img-text">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--padding">
+                <img id="adv2"
+                  class="advantages__img"
+                  src="./images/icon2@1x.png"
+                  alt="Advantages icon" />
+                <div class="advantages__desc">
+                  <p class="advantages__img-title">16kg</p>
+                  <p class="advantages__img-text">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <img id="adv3"
+                  class="advantages__img"
+                  src="./images/icon3@1x.png"
+                  alt="Advantages icon" />
+                <div class="advantages__desc">
+                  <p class="advantages__img-title">84</p>
+                  <p class="advantages__img-text">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      <section class="section gallery">
+        <div class="container2">
+        <img
+            class="none"
+            srcset="
+              ./images/gallery@2x.png  480w,
+              ./images/gallery@2x.png  768w,
+              ./images/gallery.png    1280w
+            "
+            alt="gallery"
+          />
+          </div>
+      </section>
+      <section class="section customer-reviews">
+        <div class="customer-reviews__img-container">
+          <img
+            class="customer-reviews__img"
+            srcset="
+              ./images/customer-1@2x.jpg  480w,
+              ./images/customer-1@2x.jpg  768w,
+              ./images/customer-1.jpg    1280w
+            "
+            alt="Emily, Los Angeles"
+          />
+        </div>
+        <div class="customer-reviews__text-background">
+          <div class="customer-reviews__paper">
+            <p class="customer-reviews__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+        <h3 class="customer-reviews__title">Emily, Los Angeles</h3>
+        <div class="customer-reviews__dots-menu">
+          <div class="customer-reviews__dot"></div>
+          <div class="customer-reviews__home"></div>
+          <div class="customer-reviews__dot"></div>
+        </div>
+      </section>
+      <section class="contacts-section" id="contacts">
+    <div class="container">
+        <h2 class="visually-hidden">Contacts</h2>
+        <ul class="contacts" id="contact">
+
+            <li class="contacts__item">
+                <p class="contacts__title">Cafe</p>
+                <p class="contacts__primary-text">Chicago</p>
+                <p class="contacts__secondary-text ">Fusce ut velit laoreet, tempus arcu
+                    molestie vulputate</p>
+                <div class="contacts__work-time">
+                    <p class="contacts__work-time__primary-text contacts__work-time__primary-text--before">Monday -
+                        Friday</p>
+                    <p class="contacts__work-time__time contacts__work-time__time--margin">06:00 AM - 10:00 PM</p>
+                    <p class="contacts__work-time__primary-text">Saturday - Sunday</p>
+                    <p class="contacts__work-time__time contacts__work-time__time--after">08:00 AM - 16:00 PM</p>
+                </div>
+                <address class="contacts__address">
+                    <ul>
+                        <li>
+                            <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+                        </li>
+                        <li>
+                            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                        </li>
+                    </ul>
+                </address>
+            </li>
+            <li class="contacts__item">
+                <p class="contacts__title contacts__title--bgcolor-gren">FOODTRUCK</p>
+                <p class="contacts__primary-text">Los Angeles</p>
+                <p class="contacts__secondary-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <div class="contacts__work-time">
+                    <p class="contacts__work-time__primary-text contacts__work-time__primary-text--before">Monday -
+                        Friday</p>
+                    <p class="contacts__work-time__time contacts__work-time__time--margin">06:00 AM - 10:00 PM</p>
+                    <p class="contacts__work-time__primary-text">Saturday - Sunday</p>
+                    <p class="contacts__work-time__time contacts__work-time__time--after">08:00 AM - 16:00 PM</p>
+                </div>
+                <address class="contacts__address">
+                    <ul>
+                        <li>
+                            <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+                        </li>
+                        <li>
+                            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                        </li>
+                    </ul>
+                </address>
+            </li>
+            <li class="contacts__item">
+                <p class="contacts__title">Cafe</p>
+                <p class="contacts__primary-text">New York</p>
+                <p class="contacts__secondary-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <div class="contacts__work-time">
+                    <p class="contacts__work-time__primary-text contacts__work-time__primary-text--before">Monday -
+                        Friday</p>
+                    <p class="contacts__work-time__time contacts__work-time__time--margin">06:00 AM - 10:00 PM</p>
+                    <p class="contacts__work-time__primary-text">Saturday - Sunday</p>
+                    <p class="contacts__work-time__time contacts__work-time__time--after">08:00 AM - 16:00 PM</p>
+                </div>
+                <address class="contacts__address">
+                    <ul>
+                        <li>
+                            <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+                        </li>
+                        <li>
+                            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                        </li>
+                    </ul>
+                </address>
+            </li>
+        </ul>
+        <ul class="button-contacts">
+            <li><button class="button button-contacts__locations button--modification">Our Locations
+                    <svg class="button-contacts__svg button-contacts__svg--color-white">
+                        <use href="./images/icons.svg#icon-button-mark"></use>
+                    </svg>
+                </button></li>
+            <li><button class="button button-contacts__franchise button--modification">Franchise
+                    <svg class="button-contacts__svg button-contacts__svg--color-red">
+                        <use href="./images/icons.svg#icon-button-mark"></use>
+                    </svg>
+                </button></li>
+        </ul>
+    </div>
+</section>
     </main>
     <footer class="footer"></footer>
     <div class="mobile-menu js-menu-container" id="mobilemenu">  

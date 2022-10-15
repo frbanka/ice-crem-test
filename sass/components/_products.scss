@@ -137,20 +137,13 @@ p {
   background: white;
   border: none;
   border-radius: 50%;
-
-  &:hover {
-    background-color: #d41443;
-    cursor: pointer;
-    .product-button__icon {
-      fill: white;
-    }
+  transform: scale(1);
+  transition: 500ms transform ease;
+  &:hover,
+  :focus {
+    transform: scale(0.6);
+    transition: 500ms transform ease;
   }
-}
-
-.product-button__icon {
-  width: 15px;
-  height: 15px;
-  fill: #d41443;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
