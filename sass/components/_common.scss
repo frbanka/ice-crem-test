@@ -1,5 +1,15 @@
-.container2 {
-  margin: 0 auto;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
   width: 100%;
-  max-width: 1280px;
+  height: auto;
+}
+button {
+  cursor: pointer;
 }
