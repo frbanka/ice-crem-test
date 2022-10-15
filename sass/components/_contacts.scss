@@ -41,7 +41,7 @@ body {
 
 .contacts-section {
   padding-top: 40px;
-  @media screen and (max-width: 1279.9px) {
+  @media screen and (max-width: 1199px) {
     background: -webkit-linear-gradient(
       180deg,
       rgb(255, 255, 255) 80px,
@@ -58,12 +58,12 @@ body {
       rgb(255, 245, 246) 2%
     );
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     background-image: url(../images/background-contacts.png),
       linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
     background-repeat: no-repeat;
     background-position: 50% 25%;
-    background-size: 1920px;
+    background-size: 1280px;
     @media (min-resolution: 2dppx) {
       background-image: url(../images/background-contacts-2x.png),
         linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
@@ -81,7 +81,7 @@ body {
     // flex-wrap: wrap;
     margin-bottom: 80px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     margin: 0px -15px;
     margin-bottom: 85px;
@@ -89,7 +89,7 @@ body {
   }
   &__img {
     position: absolute;
-    width: 1920px;
+    width: 1280px;
     top: 20%;
   }
   &__item:not(:last-child) {
@@ -120,7 +120,7 @@ body {
         z-index: 2;
       }
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       padding: 55px 43px;
       margin: 0px 15px;
       width: 330px;
@@ -147,7 +147,7 @@ body {
       border-radius: 6px;
       margin-bottom: 30px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 32px;
     }
   }
@@ -165,7 +165,7 @@ body {
       line-height: 24px;
       margin-bottom: 14px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       line-height: 28px;
     }
   }
@@ -179,7 +179,7 @@ body {
       line-height: 24px;
       margin-bottom: 30px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       line-height: 28px;
       margin-bottom: 32px;
     }
@@ -193,7 +193,7 @@ body {
       line-height: 24px;
       padding: 30px 0px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       line-height: 28px;
       padding: 32px 0px;
     }
@@ -240,7 +240,7 @@ body {
     @media screen and (min-width: 768px) {
       line-height: 24px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       line-height: 28px;
     }
   }

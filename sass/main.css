@@ -1030,22 +1030,22 @@ body {
 .contacts-section {
   padding-top: 40px;
 }
-@media screen and (max-width: 1279.9px) {
+@media screen and (max-width: 1199px) {
   .contacts-section {
     background: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
     background: -moz-linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
     background: linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-section {
     background-image: url(../images/background-contacts.png), linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
     background-repeat: no-repeat;
     background-position: 50% 25%;
-    background-size: 1920px;
+    background-size: 1280px;
   }
 }
-@media screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .contacts-section {
     background-image: url(../images/background-contacts-2x.png), linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
   }
@@ -1062,7 +1062,7 @@ body {
     margin-bottom: 80px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     font-size: 16px;
     margin: 0px -15px;
@@ -1072,7 +1072,7 @@ body {
 }
 .contacts__img {
   position: absolute;
-  width: 1920px;
+  width: 1280px;
   top: 20%;
 }
 @media screen and (max-width: 767.8px) {
@@ -1103,7 +1103,7 @@ body {
     z-index: 2;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts__item {
     padding: 55px 43px;
     margin: 0px 15px;
@@ -1133,7 +1133,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts__title {
     margin-bottom: 32px;
   }
@@ -1154,7 +1154,7 @@ body {
     margin-bottom: 14px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts .contacts__primary-text {
     line-height: 28px;
   }
@@ -1171,7 +1171,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts .contacts__secondary-text {
     line-height: 28px;
     margin-bottom: 32px;
@@ -1189,7 +1189,7 @@ body {
     padding: 30px 0px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts .contacts__work-time {
     line-height: 28px;
     padding: 32px 0px;
@@ -1240,7 +1240,7 @@ body {
     line-height: 24px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts__link {
     line-height: 28px;
   }
