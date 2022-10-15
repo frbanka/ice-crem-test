@@ -956,7 +956,7 @@ p {
 .button-contacts__locations:hover, .button-contacts__locations:focus {
   background-color: #c7133e;
 }
-.button-contacts-contacts__franchise:hover, .button-contacts-contacts__franchise:focus {
+.button-contacts__franchise:hover, .button-contacts__franchise:focus {
   background-color: #ecebeb;
 }
 .button-contacts--modification {
