@@ -48,6 +48,7 @@ h1 {
     display: flex;
     &-background {
       z-index: 1;
+
       picture#pic1 {
         position: absolute;
         z-index: 2;
@@ -61,7 +62,7 @@ h1 {
         z-index: 4;
         width: 171px;
         height: 410px;
-        top: 35px;
+        top: 20px;
         left: 117px;
       }
     }
@@ -501,7 +502,7 @@ picture img#pic4 {
           width: 236px;
           height: 557px;
           left: 594px;
-          top: 6px;
+          bottom: 0px;
         }
       }
       &-title {
