@@ -55,6 +55,7 @@ h1 {
 
 /*/common/*/
 .header {
+  margin: 0 auto;
   height: 502px;
   max-width: 1280px;
   background-color: var(--main-pink);
