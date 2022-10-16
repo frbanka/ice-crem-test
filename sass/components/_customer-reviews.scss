@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 80px;
+  padding-bottom: 86px;
   &__img-container {
     margin: 0 auto 29px;
   }
@@ -96,6 +97,7 @@
 @media screen and (min-width: 768px) {
   .customer-reviews {
     padding-top: 121px;
+    padding-bottom: 120px;
     &__img-container {
       margin-bottom: 19px;
     }
@@ -133,6 +135,7 @@
 @media screen and (min-width: 1280px) {
   .customer-reviews {
     padding-top: 123px;
+    padding-bottom: 130px;
     &__img-container {
       margin-bottom: 15px;
     }

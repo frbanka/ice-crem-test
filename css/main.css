@@ -36,6 +36,32 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+}
+
 /*common*/
 h1 {
   font-family: "Titan One";
@@ -50,6 +76,9 @@ h1 {
 /*/common/*/
 .header {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 502px;
   margin: 0 auto;
   background-color: var(--main-pink);
@@ -102,7 +131,7 @@ h1 {
   z-index: 4;
   width: 171px;
   height: 410px;
-  top: 35px;
+  top: 20px;
   left: 117px;
 }
 .header__banner-title {
@@ -276,6 +305,7 @@ h1 {
   .header {
     height: 399px;
     padding-top: 37px;
+    overflow: hidden;
   }
   .header__nav-mobile {
     padding: 0px 34px 0px 34px;
@@ -422,7 +452,6 @@ picture img#pic4 {
   }
   .header {
     height: 665px;
-    max-width: 1280px;
     padding: 0;
     padding-top: 37px;
   }
@@ -528,7 +557,7 @@ picture img#pic4 {
     width: 236px;
     height: 557px;
     left: 594px;
-    top: 6px;
+    bottom: 0px;
   }
   .header__banner-title {
     max-width: 277px;
@@ -591,7 +620,7 @@ picture img#pic4 {
     background: #ecebeb;
   }
 }
-.container {
+.products {
   width: 100%;
   padding: 121px 20px 98px;
   margin: 0 auto;
@@ -736,7 +765,7 @@ p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .container {
+  .products {
     padding: 121px 34px 112px;
   }
   .products__label {
@@ -777,7 +806,7 @@ p {
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  .products {
     padding: 125px 113px 120px;
     max-width: 1280px;
   }
@@ -827,11 +856,16 @@ p {
   }
 }
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
   background-color: var(--color-background);
+  background-size: contain;
+}
+.about__section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -844,11 +878,11 @@ p {
   flex-direction: column;
 }
 .about__head {
-  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 200px;
   padding-top: 125px;
   padding-bottom: 26px;
 }
@@ -888,7 +922,6 @@ p {
   font-size: 12px;
   line-height: 19px;
   color: var(--color-paragraph-dark);
-  margin-bottom: 47px;
 }
 .about__paragraph {
   min-width: 220px;
@@ -922,7 +955,6 @@ p {
 @media screen and (min-width: 768px) {
   .about {
     min-width: 772px;
-    height: 1254px;
   }
   .about__content {
     flex-direction: row;
@@ -930,6 +962,7 @@ p {
   }
   .about__img {
     min-width: 340px;
+    max-width: 516px;
     padding-left: 39px;
   }
   .about__items {
@@ -950,13 +983,12 @@ p {
     line-height: 55px;
   }
   .about__intro {
-    min-width: 340px;
-    margin-bottom: 49px;
+    max-width: 340px;
     font-size: 14px;
     line-height: 25px;
   }
   .about__paragraph {
-    min-width: 340px;
+    max-width: 340px;
     font-size: 14px;
     line-height: 25px;
   }
@@ -965,11 +997,6 @@ p {
   }
 }
 @media screen and (min-width: 1280px) {
-  .about {
-    width: 1280px;
-    height: 1383px;
-    margin: 0 auto;
-  }
   .about__head {
     width: 534px;
     padding-top: 125px;
@@ -1010,7 +1037,7 @@ p {
 }
 .advantages {
   width: 100%;
-  padding: 39px 0px 145px 20px;
+  padding: 39px 0px 0px 20px;
 }
 .advantages #adv1 {
   width: 33px;
@@ -1064,7 +1091,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .advantages {
-    padding: 66px 0px 246px 36px;
+    padding: 66px 0px 40px 115px;
     margin: 0 auto;
   }
   .advantages__list {
@@ -1110,10 +1137,22 @@ p {
   }
 }
 .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(255, 245, 246) 55%, rgb(255, 255, 255) 2%);
+}
+.gallery__section {
   max-width: 1280px;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 140px;
+  }
+}
 .customer-reviews {
   font-family: DM Sans;
   max-width: 1280px;
@@ -1124,6 +1163,7 @@ p {
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 80px;
+  padding-bottom: 86px;
 }
 .customer-reviews__img-container {
   margin: 0 auto 29px;
@@ -1210,6 +1250,7 @@ p {
 @media screen and (min-width: 768px) {
   .customer-reviews {
     padding-top: 121px;
+    padding-bottom: 120px;
   }
   .customer-reviews__img-container {
     margin-bottom: 19px;
@@ -1244,6 +1285,7 @@ p {
 @media screen and (min-width: 1280px) {
   .customer-reviews {
     padding-top: 123px;
+    padding-bottom: 130px;
   }
   .customer-reviews__img-container {
     margin-bottom: 15px;
@@ -1346,37 +1388,6 @@ p {
   fill: #d41443;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: "DM Sans";
-  font-size: 12px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1388,7 +1399,9 @@ body {
 }
 
 .contacts-section {
-  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1199px) {
   .contacts-section {
@@ -1400,17 +1413,18 @@ body {
     background-image: url(../images/background-contacts.png), linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
     background-repeat: no-repeat;
     background-position: 50% 25%;
-    background-size: 1280px;
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .contacts-section {
-    background-image: url(../images/background-contacts-2x.png), linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
+    background-image: url(../images/background-contacts-2x.png), linear-gradient(180deg, rgb(255, 255, 255) 230px, rgb(255, 245, 246) 2%);
   }
 }
 
 .contacts {
   margin-bottom: 55px;
+  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -1442,7 +1456,8 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  max-width: 330px;
+  height: 427px;
+  width: 220px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
@@ -1452,6 +1467,7 @@ body {
   .contacts__item {
     padding: 50px 31px;
     margin: 0px 10px;
+    height: 544px;
     flex-basis: calc((100% - 60px) / 3);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: 500ms;
@@ -1466,6 +1482,7 @@ body {
     padding: 55px 43px;
     margin: 0px 15px;
     width: 330px;
+    height: 572px;
     flex-basis: calc((100% - 90px) / 3);
   }
 }
