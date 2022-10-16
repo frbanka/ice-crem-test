@@ -2032,6 +2032,7 @@ p {
   padding: 40px;
 }
 .modal__close-btn {
+  z-index: 25;
   width: 0;
   height: 0;
   position: absolute;
@@ -2044,6 +2045,7 @@ p {
   transition: 300ms ease-in-out;
 }
 .modal__close-btn:hover, .modal__close-btn:focus {
+  transition: 300ms ease-in-out;
   fill: rgb(211, 19, 66);
 }
 .modal__form {

@@ -62,6 +62,7 @@
   padding: 40px;
 
   &__close-btn {
+    z-index: 25;
     width: 0;
     height: 0;
     position: absolute;
@@ -75,6 +76,7 @@
 
     &:hover,
     &:focus {
+      transition: 300ms ease-in-out;
       fill: $alt-red;
     }
   }
