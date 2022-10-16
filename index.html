@@ -16,134 +16,136 @@
 
 <body>
   <header class="header mobile-header">
-    <nav class="header__nav-mobile">
-      <div class="header__logo">
-        <picture>
-          <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 1280px)" />
-          <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 768px)" />
-          <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 320px)" />
-          <img src="./images/menu-logo.png" alt="page logo" />
-        </picture>
-      </div>
-      <div class="header__desktop-menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__item--current">Home</a>
-          </li>
-          <li class="menu__item"><a href="#aboutus">About us</a></li>
-          <li class="menu__item">
-            <a href="#how-its-made">How it's made?</a>
-          </li>
-          <li class="menu__item"><a href="#-products">Our products</a></li>
-          <li class="menu__item"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <button type="button" class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobilemenu">
-          <svg height="12px" width="20px">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
-        <button type="button" class="mobile-menu__button">
-          <div class="mobile-menu__button--gap">
-            Buy now<svg height="8px" width="5px">
-              <use href="/images/icons.svg#icon-mobile-button"></use>
+    <div class="container">
+      <nav class="header__nav-mobile">
+        <div class="header__logo">
+          <picture>
+            <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 1280px)" />
+            <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 768px)" />
+            <source srcset="./images/menu-logo.png 1x, ./images/menu-logo@2x.png 2x" media="(min-width: 320px)" />
+            <img src="./images/menu-logo.png" alt="page logo" />
+          </picture>
+        </div>
+        <div class="header__desktop-menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__item--current">Home</a>
+            </li>
+            <li class="menu__item"><a href="#aboutus">About us</a></li>
+            <li class="menu__item">
+              <a href="#how-its-made">How it's made?</a>
+            </li>
+            <li class="menu__item"><a href="#-products">Our products</a></li>
+            <li class="menu__item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <button type="button" class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobilemenu">
+            <svg height="12px" width="20px">
+              <use href="./images/icons.svg#icon-burger"></use>
             </svg>
+          </button>
+          <button type="button" class="mobile-menu__button">
+            <div class="mobile-menu__button--gap">
+              Buy now<svg height="8px" width="5px">
+                <use href="/images/icons.svg#icon-mobile-button"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </nav>
+      <div class="header__banner">
+        <div class="header__banner-background">
+          <picture id="pic1">
+            <source srcset="
+                ./images/banner-elipse.png    1x,
+                ./images/banner-elipse@2x.png 2x
+              " media="(min-width: 1280px)" />
+            <source srcset="
+                ./images/banner-elipse.png    1x,
+                ./images/banner-elipse@2x.png 2x
+              " media="(min-width: 768px)" />
+            <source srcset="
+                ./images/banner-elipse.png    1x,
+                ./images/banner-elipse@2x.png 2x
+              " media="(min-width: 320px)" />
+            <img src="./images/banner-elipse.png" alt="elipse" />
+          </picture>
+          <picture id="pic2">
+            <source srcset="
+                ./images/banner-icecream.png    1x,
+                ./images/banner-icecream@2x.png 2x
+              " media="(min-width: 1280px)" />
+            <source srcset="
+                ./images/banner-icecream.png    1x,
+                ./images/banner-icecream@2x.png 2x
+              " media="(min-width: 768px)" />
+            <source srcset="
+                ./images/banner-icecream.png    1x,
+                ./images/banner-icecream@2x.png 2x
+              " media="(min-width: 320px)" />
+            <img src="./images/banner-icecream.png" alt="icecream" />
+          </picture>
+        </div>
+        <div class="header__banner-title">
+          <h1>
+            ICE CREAM MADE WITH
+            <span class="header__banner-title--red">PASSION</span>
+          </h1>
+          <div class="header__banner-buttons">
+            <button class="header__banner-button1">Products</button>
+            <button class="header__banner-button2">How it's made?</button>
           </div>
-        </button>
-      </div>
-    </nav>
-    <div class="header__banner">
-      <div class="header__banner-background">
-        <picture id="pic1">
-          <source srcset="
-                ./images/banner-elipse.png    1x,
-                ./images/banner-elipse@2x.png 2x
-              " media="(min-width: 1280px)" />
-          <source srcset="
-                ./images/banner-elipse.png    1x,
-                ./images/banner-elipse@2x.png 2x
-              " media="(min-width: 768px)" />
-          <source srcset="
-                ./images/banner-elipse.png    1x,
-                ./images/banner-elipse@2x.png 2x
-              " media="(min-width: 320px)" />
-          <img src="./images/banner-elipse.png" alt="elipse" />
-        </picture>
-        <picture id="pic2">
-          <source srcset="
-                ./images/banner-icecream.png    1x,
-                ./images/banner-icecream@2x.png 2x
-              " media="(min-width: 1280px)" />
-          <source srcset="
-                ./images/banner-icecream.png    1x,
-                ./images/banner-icecream@2x.png 2x
-              " media="(min-width: 768px)" />
-          <source srcset="
-                ./images/banner-icecream.png    1x,
-                ./images/banner-icecream@2x.png 2x
-              " media="(min-width: 320px)" />
-          <img src="./images/banner-icecream.png" alt="icecream" />
-        </picture>
-      </div>
-      <div class="header__banner-title">
-        <h1>
-          ICE CREAM MADE WITH
-          <span class="header__banner-title--red">PASSION</span>
-        </h1>
-        <div class="header__banner-buttons">
-          <button class="header__banner-button1">Products</button>
-          <button class="header__banner-button2">How it's made?</button>
         </div>
       </div>
-    </div>
-    <div class="header__counters-container">
-      <div class="header__counter-container">
-        <svg>
-          <use href="./images/icons.svg#ellipse-white"></use>
-        </svg>
-        <span class="header__counter" id="cafes">16</span>
-        <span class="header__counter-title">cafes</span>
+      <div class="header__counters-container">
+        <div class="header__counter-container">
+          <svg>
+            <use href="./images/icons.svg#ellipse-white"></use>
+          </svg>
+          <span class="header__counter" id="cafes">16</span>
+          <span class="header__counter-title">cafes</span>
+        </div>
+        <div class="header__counter-container">
+          <svg>
+            <use href="./images/icons.svg#ellipse-white"></use>
+          </svg>
+          <span class="header__counter" id="food-trucks">23</span>
+          <span class="header__counter-title">food trucks</span>
+        </div>
       </div>
-      <div class="header__counter-container">
-        <svg>
-          <use href="./images/icons.svg#ellipse-white"></use>
-        </svg>
-        <span class="header__counter" id="food-trucks">23</span>
-        <span class="header__counter-title">food trucks</span>
-      </div>
-    </div>
-    <div class="header__tablet-desktop-icons">
-      <figure>
-        <picture>
-          <source srcset="
+      <div class="header__tablet-desktop-icons">
+        <figure>
+          <picture>
+            <source srcset="
                 ./images/spilling-milk.png    1x,
                 ./images/spilling-milk@2x.pmg 2x
               " media="(min-width: 1280px)" />
-          <source srcset="
+            <source srcset="
                 ./images/spilling-milk.png    1x,
                 ./images/spilling-milk@2x.pmg 2x
               " media="(min-width: 768px)" />
-          <source srcset="
+            <source srcset="
                 ./images/spilling-milk.png    1x,
                 ./images/spilling-milk@2x.pmg 2x
               " media="(min-width: 320px)" />
-          <img id="pic3" src="./images/spilling-milk.png" alt="spilling-milk" />
+            <img id="pic3" src="./images/spilling-milk.png" alt="spilling-milk" />
+          </picture>
+          <figcaption>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+            <button type="button" class="header__circle-button">
+              <img src="./images/arrow-right@2x.png" alt="arrow right button" width="26" height="26" />
+            </button>
+          </figcaption>
+        </figure>
+        <picture>
+          <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 1280px)" />
+          <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 768px)" />
+          <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 320px)" />
+          <img id="pic4" src="./images/woman.png" alt="woman" />
         </picture>
-        <figcaption>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-          <button type="button" class="header__circle-button">
-            <img src="./images/arrow-right@2x.png" alt="arrow right button" width="26" height="26" />
-          </button>
-        </figcaption>
-      </figure>
-      <picture>
-        <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 1280px)" />
-        <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 768px)" />
-        <source srcset="./images/woman.png 1x, ./images/woman@2x.png 2x" media="(min-width: 320px)" />
-        <img id="pic4" src="./images/woman.png" alt="woman" />
-      </picture>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -209,74 +211,80 @@
       </div>
     </section>
     <section class="section about">
-      <div class="about__head">
-        <label class="about__label"> Tradition and Love </label>
-        <h2 class="about__title">How it's made?</h2>
-      </div>
-      <div class="about__content">
-        <picture class="about__img">
-          <source srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x" media="(min-width: 1280px)" />
-          <source srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x" media="(min-width: 768px)" />
-          <source srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x" media="(min-width: 320px)" />
-          <img src="./images/home-pic@1x.png" alt="cow" />
-        </picture>
+      <div class="container">
+        <div class="about__section">
+          <div class="about__head">
+            <label class="about__label"> Tradition and Love </label>
+            <h2 class="about__title">How it's made?</h2>
+          </div>
+          <div class="about__content">
+            <picture class="about__img">
+              <source srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x" media="(min-width: 1280px)" />
+              <source srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x" media="(min-width: 768px)" />
+              <source srcset="./images/home-pic@1x.png 1x, ./images/home-pic@2x.png 2x" media="(min-width: 320px)" />
+              <img src="./images/home-pic@1x.png" alt="cow" />
+            </picture>
 
-        <div class="about__items">
-          <p class="about__intro">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="about__paragraph">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-            Cras massa nibh, tincidunt. <br />
-            <br />
-            Aliquam erat volutpat. Aenean accumsan.
-          </p>
-          <button class="about__btn" type="button">Read more</button>
+            <div class="about__items">
+              <p class="about__intro">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+                erat at justo fringilla.
+              </p>
+              <p class="about__paragraph">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                Cras massa nibh, tincidunt. <br />
+                <br />
+                Aliquam erat volutpat. Aenean accumsan.
+              </p>
+              <button class="about__btn" type="button">Read more</button>
+            </div>
+          </div>
+          <div class="advantages">
+            <h2 class="advantages__title">Advantages</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <img id="adv1" class="advantages__img" src="./images/icon1@1x.png" alt="Advantages icon" />
+                <div class="advantages__desc">
+                  <p class="advantages__img-title">721</p>
+                  <p class="advantages__img-text">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--padding">
+                <img id="adv2" class="advantages__img" src="./images/icon2@1x.png" alt="Advantages icon" />
+                <div class="advantages__desc">
+                  <p class="advantages__img-title">16kg</p>
+                  <p class="advantages__img-text">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <img id="adv3" class="advantages__img" src="./images/icon3@1x.png" alt="Advantages icon" />
+                <div class="advantages__desc">
+                  <p class="advantages__img-title">84</p>
+                  <p class="advantages__img-text">
+                    Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="advantages">
-        <h2 class="advantages__title">Advantages</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <img id="adv1" class="advantages__img" src="./images/icon1@1x.png" alt="Advantages icon" />
-            <div class="advantages__desc">
-              <p class="advantages__img-title">721</p>
-              <p class="advantages__img-text">
-                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-              </p>
-            </div>
-          </li>
-          <li class="advantages__item advantages__item--padding">
-            <img id="adv2" class="advantages__img" src="./images/icon2@1x.png" alt="Advantages icon" />
-            <div class="advantages__desc">
-              <p class="advantages__img-title">16kg</p>
-              <p class="advantages__img-text">
-                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-              </p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <img id="adv3" class="advantages__img" src="./images/icon3@1x.png" alt="Advantages icon" />
-            <div class="advantages__desc">
-              <p class="advantages__img-title">84</p>
-              <p class="advantages__img-text">
-                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-              </p>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
     <section class="section gallery">
-      <img srcset="
+      <div class="container gallery__section">
+        <img srcset="
               ./images/gallery@2x.png  480w,
               ./images/gallery@2x.png  768w,
               ./images/gallery.png    1280w
             " alt="gallery" />
+      </div>
     </section>
     <section class="section customer-reviews">
       <div class="customer-reviews__img-container">

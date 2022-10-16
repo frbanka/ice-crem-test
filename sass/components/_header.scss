@@ -12,6 +12,9 @@ h1 {
 /*/common/*/
 .header {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 502px;
   margin: 0 auto;
   background-color: var(--main-pink);
@@ -238,6 +241,7 @@ h1 {
   .header {
     height: 399px;
     padding-top: 37px;
+    overflow: hidden;
     &__nav-mobile {
       padding: 0px 34px 0px 34px;
     }
@@ -249,6 +253,7 @@ h1 {
     &__banner {
       position: relative;
       display: flex;
+
       &-background {
         picture#pic1 {
           position: absolute;
@@ -389,7 +394,6 @@ picture img#pic4 {
   }
   .header {
     height: 665px;
-    max-width: 1280px;
     padding: 0;
     padding-top: 37px;
     &__counter-container {
