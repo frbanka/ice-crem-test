@@ -1,12 +1,12 @@
 .button {
-  border: none;
+  border: transparent;
   cursor: pointer;
   background-color: #fff;
   border-radius: 22px;
   padding: 11px 37px;
   font-family: "DM Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
@@ -14,14 +14,17 @@
 
   &-contacts {
     text-align: center;
+    margin-top: 54px;
+
     @media screen and (max-width: 767.9px) {
       width: 250px;
-      margin-left: auto;
-      margin-right: auto;
+      // margin-left: auto;
+      // margin-right: auto;
     }
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
+      margin-top: 81px;
     }
 
     &__locations {
@@ -53,18 +56,20 @@
       }
       @media screen and (min-width: 1280px) {
         min-width: 195px;
+        margin-top: 86px;
       }
     }
     .button-contacts__svg {
       margin-left: 13px;
       height: 9px;
       width: 6px;
-    }
-    &--color-white {
-      fill: $color-text-white;
-    }
-    &--color-red {
-      fill: $color-text-red;
+
+      &--color-white {
+        fill: $color-text-white;
+      }
+      &--color-red {
+        fill: $color-text-red;
+      }
     }
   }
 }
