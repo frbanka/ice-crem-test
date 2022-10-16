@@ -1,107 +1,133 @@
 .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-width: 320px;
+  height: 100%;
   width: 100%;
-  margin: 0 auto;
-  background-color: var(--color-background);
-  background-size: contain;
+  background-color: $bg-pink;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &__section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
-  &__content {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
+  &__bg-img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44%;
+    z-index: 1;
+  }
+
   &__head {
+    position: relative;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
     padding-top: 125px;
     padding-bottom: 26px;
+    z-index: 2;
   }
 
   &__label {
-    font-family: var(--font-titanone);
+    position: relative;
+    font-family: $titan-one;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
-    color: var(--color-title-label);
+    color: $main-pink;
     padding-bottom: 15px;
+    z-index: 2;
   }
 
   &__title {
+    position: relative;
     text-align: center;
-    font-family: var(--font-titanone);
+    font-family: $titan-one;
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
     line-height: 39px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--color-title);
+    color: $main-red;
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__img {
-    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    padding-bottom: 46px;
+    z-index: 2;
   }
 
   &__items {
+    position: relative;
     padding-left: 50px;
     padding-right: 50px;
+    z-index: 2;
   }
 
   &__intro {
+    position: relative;
     min-width: 220px;
-    // height: 79px;
-    font-family: var(--font-dmsans);
+    font-family: $dm-sans;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 19px;
-    color: var(--color-paragraph-dark);
+    color: $main-black;
+    margin-bottom: 47px;
+    z-index: 2;
   }
 
   &__paragraph {
+    position: relative;
     min-width: 220px;
-    // height: 155px;
-    font-family: var(--font-dmsans);
+    font-family: $dm-sans;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 19px;
-    color: var(--color-paragraph-light);
+    color: $dark-gray;
+    z-index: 2;
   }
 
   &__btn {
     margin-top: 47px;
     width: 176px;
     height: 44px;
-    background-color: var(--color-btn-background);
+    background-color: $main-white;
     border-radius: 22px;
     border: none;
-    font-family: var(--font-dmsans);
+    font-family: $dm-sans;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color: var(--color-btn);
+    color: $main-red;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      background-color: var(--color-btn-background-dark);
+      background-color: $btn-gray;
     }
   }
 }
@@ -111,21 +137,10 @@
 @media screen and (min-width: 768px) {
   .about {
     min-width: 772px;
-
-    &__content {
-      flex-direction: row;
-      gap: 19px;
+    &__background {
+      display: none;
     }
 
-    &__img {
-      min-width: 340px;
-      max-width: 516px;
-      padding-left: 39px;
-    }
-
-    &__items {
-      padding: 100px 36px 0px 0px;
-    }
     &__head {
       width: 440px;
       padding-top: 130px;
@@ -143,15 +158,30 @@
       line-height: 55px;
     }
 
+    &__content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__img {
+      width: 340px;
+      height: 339px;
+      padding: 0;
+    }
+
+    &__items {
+      padding: 50px 36px 0 17px;
+    }
+
     &__intro {
-      max-width: 340px;
+      max-width: 463px;
+      margin-bottom: 49px;
       font-size: 14px;
       line-height: 25px;
-      // padding-right: 36px;
     }
 
     &__paragraph {
-      max-width: 340px;
+      max-width: 463px;
       font-size: 14px;
       line-height: 25px;
     }
@@ -164,8 +194,13 @@
 
 // DESKTOP
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about {
+    &__bg-img {
+      display: block;
+      top: 25%;
+    }
+
     &__head {
       width: 534px;
       padding-top: 125px;
