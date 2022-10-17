@@ -3,44 +3,22 @@
   padding: 121px 20px 98px;
   margin: 0 auto;
 }
-
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .products__label {
   display: block;
-  font-family: "Titan One";
-  color: #ffa5ba;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
+  color: $main-pink;
+  @include font($fw: 400, $fs: 18px, $ff: $titan-one);
   margin-bottom: 15px;
 }
 .products__header {
-  font-family: "Titan One";
-  color: #d41443;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 39px;
+  @include font($fw: 400, $fs: 34px, $ff: $titan-one, $lh: 34px);
+  color: $main-red;
   margin-bottom: 144px;
-  letter-spacing: 0.04em;
-  text-align: center;
 }
-
 .products-list {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   flex-wrap: wrap;
   row-gap: 130px;
 }
-
 .product {
   display: flex;
   flex-direction: column;
@@ -51,7 +29,7 @@ p {
   padding: 161px 40px 41px;
 
   &--icecream {
-    background-color: #ffb8ca;
+    background-color: $main-pink;
     border-radius: 24px;
     position: relative;
     &::before {
@@ -64,7 +42,7 @@ p {
   }
 
   &--coffee {
-    background-color: #f0d1a5;
+    background-color: $yellow-green;
     border-radius: 24px;
     &::before {
       content: url("../images/product2.png");
@@ -76,7 +54,7 @@ p {
   }
 
   &--milkshake {
-    background-color: #c2e297;
+    background-color: $lime-green;
     border-radius: 24px;
     &::before {
       content: url("../images/product3.png");
@@ -89,23 +67,18 @@ p {
 }
 
 .product__name {
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
+  @include font($fw: 400, $fs: 20px, $ff: $titan-one, $lh: 34px);
+  color: $main-white;
   height: auto;
   position: relative;
   padding-bottom: 30px;
   line-height: 15px;
+  margin-bottom: 10px;
 
   &::after {
     content: "...";
-    font-size: 21px;
-    letter-spacing: 0.1em;
-    color: #fff;
+    @include font($fs: 20px, $ls: 0.1em);
+    color: $main-white;
     position: relative;
     bottom: -30px;
     left: 0;
@@ -114,17 +87,15 @@ p {
 
 .product__description {
   padding-top: 30px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 152%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
+  padding-bottom: 30px;
+  @include font($fw: 700, $ff: $dm-sans, $fs: 14px, $lh: 152%);
+  color: $main-white;
   margin-bottom: 30px;
 
   &--details {
-    color: #d41443;
+    position: relative;
+    color: $main-red;
+    display: none;
   }
 }
 
@@ -134,31 +105,32 @@ p {
   align-items: center;
   width: 40px;
   height: 40px;
-  background: white;
+  background: $main-white;
   border: none;
   border-radius: 50%;
-  transform: scale(1);
-  transition: 500ms transform ease;
-  &:hover,
-  :focus {
-    transform: scale(0.6);
-    transition: 500ms transform ease;
+
+  &:hover {
+    background-color: $main-red;
+    cursor: pointer;
+    .product-button__icon {
+      fill: $main-white;
+    }
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .products {
-    padding: 121px 34px 112px;
-  }
+.product-button__icon {
+  width: 15px;
+  height: 15px;
+  fill: $main-red;
+}
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .products__label {
-    font-size: 26px;
-    line-height: 30px;
+    @include font($fs: 26px, $lh: 30px, $ff: $titan-one);
   }
 
   .products__header {
-    font-size: 48px;
-    line-height: 55px;
+    @include font($fs: 48px, $lh: 55px, $ff: $titan-one);
     margin-bottom: 150px;
   }
   .products-list {
@@ -170,6 +142,9 @@ p {
     padding: 152px 15px 40px;
     flex-basis: calc((100% - 2 * 20px) / 3);
 
+    &__name {
+      @include font($fs: 20px, $lh: 23px, $ff: $titan-one, $fw: 400);
+    }
     &__description {
       line-height: 176%;
     }
@@ -200,21 +175,13 @@ p {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .products {
-    padding: 125px 113px 120px;
-    max-width: 1280px;
-  }
-
+@media screen and (min-width: 1200px) {
   .products__label {
-    font-size: 30px;
-    line-height: 34px;
+    @include font($fs: 30px, $lh: 34px, $ff: $titan-one);
   }
 
   .products__header {
-    font-size: 58px;
-    line-height: 66px;
-    letter-spacing: 0.06em;
+    @include font($fs: 58px, $lh: 66px, $ls: 0.06em, $ff: $titan-one);
     margin-bottom: 259px;
   }
 
@@ -229,13 +196,11 @@ p {
     height: auto;
 
     &__name {
-      font-size: 30px;
-      line-height: 20px;
+      @include font($fs: 30px, $lh: 34px, $ff: $titan-one, $fw: 500);
     }
 
     &__description {
-      font-size: 16px;
-      line-height: 176%;
+      @include font($fs: 16px, $lh: 176%);
       margin-bottom: 62px;
     }
 

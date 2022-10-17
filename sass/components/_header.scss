@@ -1,15 +1,3 @@
-/*common*/
-
-h1 {
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  color: var(--white);
-}
-/*/common/*/
 .header {
   position: relative;
   display: flex;
@@ -17,9 +5,10 @@ h1 {
   align-items: center;
   height: 502px;
   margin: 0 auto;
-  background-color: var(--main-pink);
+  background-color: $main-pink;
   display: flex;
   flex-direction: column;
+  font-family: $titan-one;
   &__counter-container {
     display: none;
     visibility: 0;
@@ -82,7 +71,7 @@ h1 {
       left: 20px;
       top: 137px;
       &--red {
-        color: var(--main-red);
+        color: $main-red;
         font-size: 48px;
         line-height: 46px;
       }
@@ -93,30 +82,30 @@ h1 {
       gap: 8px;
     }
     &-button1 {
-      background: var(--main-red);
+      background: $main-red;
       border-radius: 20px;
       border: none;
       width: 62px;
       height: 24px;
-      font-family: "DM Sans";
+      font-family: $dm-sans;
       font-style: normal;
       font-weight: 400;
       font-size: 8px;
       line-height: 10px;
-      color: var(--white);
+      color: $main-white;
     }
     &-button2 {
-      background: var(--white);
+      background: $main-white;
       border-radius: 20px;
       border: none;
       width: 83px;
       height: 24px;
-      font-family: "DM Sans";
+      font-family: $dm-sans;
       font-style: normal;
       font-weight: 400;
       font-size: 8px;
       line-height: 10px;
-      color: var(--main-red);
+      color: $main-red;
     }
   }
 }
@@ -134,24 +123,24 @@ h1 {
   width: 100%;
   height: 100%;
   padding: 60px 0px 0px 0px;
-  background-color: var(--menu-pink);
+  background-color: $dark-pink;
   z-index: 20;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  font-family: $dm-sans;
   &__button {
     position: relative;
     z-index: 4;
     width: 209px;
     height: 44px;
-    background: var(--white);
+    background: $main-white;
     border-radius: 22px;
     border: none;
-    font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    color: var(--main-red);
+    color: $main-red;
 
     &--gap {
       display: flex;
@@ -191,9 +180,9 @@ h1 {
       display: flex;
       width: 100%;
       height: 42px;
-      border-top: 1px solid var(--light-pink);
+      border-top: 1px solid $dark-pink;
       &:nth-child(5) {
-        border-bottom: 1px solid var(--light-pink);
+        border-bottom: 1px solid $dark-pink;
       }
     }
   }
@@ -201,15 +190,14 @@ h1 {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color: var(--white);
+    color: $main-white;
     padding: 0px 0px 0px 21px;
     &--current {
-      color: var(--main-red);
+      color: $main-red;
     }
   }
 }
@@ -233,7 +221,7 @@ h1 {
     width: 254px;
     height: 100%;
     padding: 60px 0px 0px 0px;
-    background-color: var(--menu-pink);
+    background-color: $dark-pink;
     z-index: 20;
     transform: translatey(100%);
     transition: transform 250ms ease-in-out;
@@ -293,7 +281,7 @@ h1 {
       margin-top: 20px;
       & > svg {
         position: absolute;
-        fill: #ffffff;
+        fill: $main-white;
         right: 38px;
         top: -2px;
         width: 16px;
@@ -302,7 +290,7 @@ h1 {
     }
     &__counter {
       z-index: 2;
-      font-family: "Titan One";
+      font-family: $titan-one;
       font-style: normal;
       font-weight: 400;
       font-size: 28px;
@@ -310,15 +298,15 @@ h1 {
       text-align: right;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #d41443;
+      color: $main-red;
       &-title {
-        font-family: "DM Sans";
+        font-family: $dm-sans;
         font-style: normal;
         font-weight: 400;
         font-size: 8px;
         line-height: 10px;
         text-align: right;
-        color: #ffffff;
+        color: $main-white;
       }
     }
     &__tablet-desktop-icons {
@@ -331,7 +319,7 @@ h1 {
       height: 18px;
       width: 18px;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $main-white;
       border: none;
       position: absolute;
       bottom: -27px;
@@ -354,12 +342,12 @@ figcaption {
   left: 150px;
   width: 114px;
   height: 48px;
-  font-family: "DM Sans";
+  font-family: $dm-sans;
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
   line-height: 150%;
-  color: #ffffff;
+  color: $main-white;
 }
 
 picture img#pic4 {
@@ -409,7 +397,7 @@ picture img#pic4 {
       margin-top: 20px;
       & > svg {
         position: absolute;
-        fill: #ffffff;
+        fill: $main-white;
         width: 30px;
         height: 30px;
         right: 97px;
@@ -418,7 +406,7 @@ picture img#pic4 {
     }
     &__counter {
       z-index: 2;
-      font-family: "Titan One";
+      font-family: $titan-one;
       font-style: normal;
       font-weight: 400;
       font-size: 46px;
@@ -426,15 +414,15 @@ picture img#pic4 {
       text-align: right;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #d41443;
+      color: $main-red;
       &-title {
-        font-family: "DM Sans";
+        font-family: $dm-sans;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 10px;
         text-align: right;
-        color: #ffffff;
+        color: $main-white;
       }
     }
     &__circle-button {
@@ -485,12 +473,12 @@ picture img#pic4 {
     &__banner {
       &-button1 {
         &:hover {
-          background-color: #c7133e;
+          background-color: $light-red;
         }
       }
       &-button2 {
         &:hover {
-          background-color: #ecebeb;
+          background-color: $btn-gray;
         }
       }
     }
@@ -557,7 +545,7 @@ picture img#pic4 {
       gap: 35px;
     }
     &__item {
-      font-family: "DM Sans";
+      font-family: $dm-sans;
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
@@ -568,17 +556,17 @@ picture img#pic4 {
 
       & > a {
         text-decoration: none;
-        color: #ffffff;
+        color: $main-white;
         &.menu__item--current {
-          color: #d41443;
+          color: $main-red;
         }
         &:hover {
-          color: #d41443;
+          color: $main-red;
         }
       }
     }
   }
   .mobile-menu__button:hover {
-    background: #ecebeb;
+    background: $btn-gray;
   }
 }

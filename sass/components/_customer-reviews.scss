@@ -1,5 +1,4 @@
 .customer-reviews {
-  font-family: $dm-sans;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
@@ -7,16 +6,14 @@
   align-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 85px;
   &__img-container {
     margin: 0 auto 29px;
     height: 85px;
   }
   &__img {
-    position: absolute;
     height: 85px;
     width: 0;
-    left: calc(50% - 43px);
     animation: opacityImg 15s ease-in-out infinite;
     &--two {
       animation-delay: 5s;
@@ -69,11 +66,8 @@
   }
   &__text {
     position: relative;
-    font-weight: 500;
+    @include font($fs: 12px, $lh: 255%, $fw: 500);
     color: $main-black;
-    text-align: center;
-    font-size: 12px;
-    line-height: 255%;
     margin: auto 0;
     height: 0;
     left: -150%;
@@ -90,12 +84,10 @@
     margin-bottom: 30px;
   }
   &__title {
-    font-size: 14px;
-    line-height: 186%;
-    color: $main-black;
-    text-align: center;
-    margin: 0;
     position: relative;
+    @include font($fs: 14px, $lh: 30px, $fw: 500);
+    color: $main-black;
+    margin: 0;
     bottom: 20px;
     height: 0;
     opacity: 0;
@@ -276,12 +268,10 @@
     color: transparent;
   }
 }
-
 // TABLET
-
 @media screen and (min-width: 768px) {
   .customer-reviews {
-    padding-bottom: 110px;
+    padding-bottom: 120px;
     &__img-container {
       margin-bottom: 19px;
     }
@@ -303,21 +293,19 @@
       background-position-y: 1.52rem;
     }
     &__text {
-      font-size: 14px;
-      line-height: 216%;
+      @include font($fs: 14px, $lh: 216%, $fw: 500);
     }
     &__titles {
       margin-top: 42px;
       margin-bottom: 35px;
     }
     &__title {
+      @include font($fs: 16px, $lh: 30px, $fw: 500);
       font-size: 16px;
     }
   }
 }
-
 // DESKTOP
-
 @media screen and (min-width: 1200px) {
   .customer-reviews {
     padding-bottom: 130px;
@@ -337,14 +325,13 @@
       background-position-y: 1.59rem;
     }
     &__text {
-      font-size: 16px;
-      line-height: 186%;
+      @include font($fs: 16px, $lh: 30px, $fw: 500);
     }
     &__titles {
       margin-top: 34px;
     }
     &__title {
-      font-size: 20px;
+      @include font($fs: 20px, $lh: 37px, $fw: 500);
     }
   }
 }
