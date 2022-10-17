@@ -1,16 +1,3 @@
-:root {
-  --color-background: rgba(255, 245, 246, 1);
-  --color-title-label: rgba(255, 165, 186, 1);
-  --color-title: rgba(212, 20, 67, 1);
-  --color-paragraph-dark: rgba(0, 0, 0, 1);
-  --color-paragraph-light: rgba(144, 126, 130, 1);
-  --color-btn-background: rgba(255, 255, 255, 1);
-  --color-btn-background-dark: rgba(236, 235, 235, 1);
-  --color-btn: rgba(212, 20, 67, 1);
-  --font-titanone: "Titan One";
-  --font-dmsans: "DM Sans";
-}
-
 *,
 *::after,
 *::before {
@@ -71,14 +58,12 @@ a {
 .header {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 502px;
   margin: 0 auto;
-  background-color: rgb(255, 165, 186);
-  display: flex;
-  flex-direction: column;
-  font-family: Titan One;
+  background-color: rgb(255, 184, 202);
 }
 .header__counter-container {
   display: none;
@@ -115,21 +100,30 @@ a {
 }
 .header__banner-background picture#pic1 {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   width: 344px;
   height: 346px;
-  top: 15px;
   left: 36px;
+  top: 30px;
 }
 .header__banner-background picture#pic2 {
   position: absolute;
   z-index: 4;
   width: 171px;
   height: 410px;
-  top: 20px;
-  left: 117px;
+  top: 43px;
+  left: 120px;
 }
 .header__banner-title {
+  font-family: Titan One;
+  text-align: left;
+  text-transform: none;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
   z-index: 10;
   position: absolute;
   display: flex;
@@ -153,30 +147,38 @@ a {
   gap: 8px;
 }
 .header__banner-button1 {
+  font-family: DM Sans;
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
   background: rgb(212, 20, 67);
   border-radius: 20px;
   border: none;
   width: 62px;
   height: 24px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
-  color: rgb(255, 255, 255);
 }
 .header__banner-button2 {
+  font-family: DM Sans;
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: rgb(212, 20, 67);
   background: rgb(255, 255, 255);
   border-radius: 20px;
   border: none;
   width: 83px;
   height: 24px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
-  color: rgb(212, 20, 67);
 }
 
 .mobile-header {
@@ -197,21 +199,25 @@ a {
   z-index: 20;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  font-family: DM Sans;
 }
 .mobile-menu__button {
   position: relative;
   z-index: 4;
+  font-family: DM Sans;
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: rgb(212, 20, 67);
   width: 209px;
   height: 44px;
   background: rgb(255, 255, 255);
   border-radius: 22px;
   border: none;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  color: rgb(212, 20, 67);
 }
 .mobile-menu__button--gap {
   display: flex;
@@ -251,10 +257,10 @@ a {
   display: flex;
   width: 100%;
   height: 42px;
-  border-top: 1px solid rgb(225, 121, 146);
+  border-top: 1px solid #E18298;
 }
 .mobile-menu__links-item:nth-child(5) {
-  border-bottom: 1px solid rgb(225, 121, 146);
+  border-bottom: 1px solid #E18298;
 }
 .mobile-menu__link {
   display: flex;
@@ -2270,18 +2276,22 @@ picture img#pic4 {
 }
 
 .btn {
+  cursor: pointer;
   font-family: DM Sans;
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
   align-self: center;
   color: rgb(255, 255, 255);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
   border-radius: 22px;
   padding: 10px 37px;
   max-width: 160px;
   margin-bottom: 20px;
-  cursor: pointer;
   background: rgb(212, 20, 67);
   background-image: linear-gradient(-60deg, transparent, transparent 40%, rgba(255, 255, 255, 0.2666666667) 40%, rgba(255, 255, 255, 0.2666666667) 60%, transparent 60%, transparent 100%);
   background-size: 200% 100%;
@@ -2301,7 +2311,6 @@ picture img#pic4 {
 
 .modal {
   position: fixed;
-  z-index: 55;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2313,7 +2322,7 @@ picture img#pic4 {
           backdrop-filter: blur(5px);
   width: 80vw;
   height: 90vh;
-  overflow: hidden;
+  overflow: auto;
   max-width: 1000px;
   padding: 40px;
 }
@@ -2355,19 +2364,27 @@ picture img#pic4 {
   left: 0;
 }
 .modal__tag {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(250, 250, 250);
   position: absolute;
   top: 0;
+  font-family: DM Sans;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 1em;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
   white-space: nowrap;
-  transition-property: color, transform, font-size;
+  transition-property: color, transform, font-size font-weight;
   transition-duration: 0.5s;
 }
 .modal__input:valid ~ .modal__tag, .modal__input:focus ~ .modal__tag, .modal__input:hover ~ .modal__tag {
-  color: rgba(255, 255, 255, 0.8);
-  transform: translateY(-16px);
-  font-size: 0.7em;
+  color: rgb(212, 20, 67);
+  transform: translateY(-8px);
+  font-size: 0.8em;
+  font-weight: 700;
 }
 .modal__item {
   position: relative;
@@ -2377,11 +2394,7 @@ picture img#pic4 {
   display: none;
 }
 .modal__option-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+  display: inline-block;
   position: relative;
   text-align: center;
   cursor: pointer;
@@ -2396,22 +2409,27 @@ picture img#pic4 {
   border-image-source: linear-gradient(to left, rgb(255, 184, 202), rgb(225, 121, 146), rgb(255, 184, 202));
   transform: scale(90%);
 }
+.modal__item-checkbox:checked ~ .modal__option-inner .modal__name {
+  color: rgb(194, 226, 151);
+}
 .modal__name {
   display: block;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255);
   font-weight: 400;
   text-transform: uppercase;
   white-space: nowrap;
 }
 .modal__title {
-  color: rgb(255, 255, 255);
-  font-family: Titan One, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-family: Titan One;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .modal__flexbox {
   height: 100%;
@@ -2464,18 +2482,18 @@ picture img#pic4 {
 }
 .modal__product-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
 }
 
 .modal__image {
-  width: 30%;
+  width: 40%;
 }
 
 @media screen and (min-width: 480px) {
   .modal__image {
-    width: 60%;
+    width: 50%;
   }
 }
 ::-webkit-scrollbar {

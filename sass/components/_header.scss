@@ -1,14 +1,12 @@
 .header {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 502px;
   margin: 0 auto;
-  background-color: $main-pink;
-  display: flex;
-  flex-direction: column;
-  font-family: $titan-one;
+  background-color: $light-pink;
   &__counter-container {
     display: none;
     visibility: 0;
@@ -40,25 +38,25 @@
     display: flex;
     &-background {
       z-index: 1;
-
       picture#pic1 {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         width: 344px;
         height: 346px;
-        top: 15px;
         left: 36px;
+        top: 30px;
       }
       picture#pic2 {
         position: absolute;
         z-index: 4;
         width: 171px;
         height: 410px;
-        top: 20px;
-        left: 117px;
+        top: 43px;
+        left: 120px;
       }
     }
     &-title {
+      @include font($ff: $titan-one, $fs: 26px, $lh: 30px, $tal: left);
       z-index: 10;
       position: absolute;
       display: flex;
@@ -82,30 +80,22 @@
       gap: 8px;
     }
     &-button1 {
+      @include font($ff: $dm-sans, $fs: 8px, $lh: 10px, $fw: 400);
+      color: $main-white;
       background: $main-red;
       border-radius: 20px;
       border: none;
       width: 62px;
       height: 24px;
-      font-family: $dm-sans;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 10px;
-      color: $main-white;
     }
     &-button2 {
+      @include font($ff: $dm-sans, $fs: 8px, $lh: 10px, $fw: 400);
+      color: $main-red;
       background: $main-white;
       border-radius: 20px;
       border: none;
       width: 83px;
       height: 24px;
-      font-family: $dm-sans;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 10px;
-      color: $main-red;
     }
   }
 }
@@ -127,20 +117,16 @@
   z-index: 20;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  font-family: $dm-sans;
   &__button {
     position: relative;
     z-index: 4;
+    @include font($ff: $dm-sans, $fs: 16px, $lh: 21px, $fw: 700);
+    color: $main-red;
     width: 209px;
     height: 44px;
     background: $main-white;
     border-radius: 22px;
     border: none;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: $main-red;
 
     &--gap {
       display: flex;
@@ -180,9 +166,9 @@
       display: flex;
       width: 100%;
       height: 42px;
-      border-top: 1px solid $dark-pink;
+      border-top: 1px solid $line-pink;
       &:nth-child(5) {
-        border-bottom: 1px solid $dark-pink;
+        border-bottom: 1px solid $line-pink;
       }
     }
   }
