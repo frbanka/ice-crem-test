@@ -7,18 +7,14 @@
   background-color: rgba(98, 11, 66, 0.5);
 }
 .btn {
-  font-family: $dm-sans;
+  cursor: pointer;
+  @include font($fw: 700, $ff: $dm-sans, $fs: 16px, $lh: 21px);
   align-self: center;
   color: $main-white;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
   border-radius: 22px;
   padding: 10px 37px;
   max-width: 160px;
   margin-bottom: 20px;
-  cursor: pointer;
   background: $main-red;
   background-image: linear-gradient(
     -60deg,
@@ -46,7 +42,6 @@
 }
 .modal {
   position: fixed;
-  z-index: 55;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -57,7 +52,7 @@
   backdrop-filter: blur(5px);
   width: 80vw;
   height: 90vh;
-  overflow: hidden;
+  overflow: auto;
   max-width: 1000px;
   padding: 40px;
 
@@ -105,21 +100,27 @@
   }
 
   &__tag {
-    color: rgba(255, 255, 255, 0.9);
+    color: $lighter-gray;
     position: absolute;
     top: 0;
-    text-transform: uppercase;
-    font-size: 1em;
+    @include font(
+      $fw: 400,
+      $ff: $dm-sans,
+      $fs: 15px,
+      $lh: 16px,
+      $tt: uppercase
+    );
     white-space: nowrap;
-    transition-property: color, transform, font-size;
+    transition-property: color, transform, font-size font-weight;
     transition-duration: 0.5s;
 
     .modal__input:valid ~ &,
     .modal__input:focus ~ &,
     .modal__input:hover ~ & {
-      color: rgba(255, 255, 255, 0.8);
-      transform: translateY(-16px);
-      font-size: 0.7em;
+      color: $main-red;
+      transform: translateY(-8px);
+      font-size: 0.8em;
+      font-weight: 700;
     }
   }
 
@@ -133,11 +134,7 @@
   }
 
   &__option-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    display: inline-block;
     position: relative;
     text-align: center;
     cursor: pointer;
@@ -158,26 +155,29 @@
         $light-pink
       );
       transform: scale(90%);
+      .modal__name {
+        color: $main-green;
+      }
     }
   }
 
   &__name {
     display: block;
-    color: rgba(255, 255, 255, 0.9);
+    color: $main-white;
     font-weight: 400;
     text-transform: uppercase;
     white-space: nowrap;
   }
 
   &__title {
+    @include font(
+      $fw: 500,
+      $ff: $titan-one,
+      $fs: 24px,
+      $lh: 18px,
+      $tt: uppercase
+    );
     color: $main-white;
-    font-family: $titan-one, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
 
   &__flexbox {
@@ -227,19 +227,19 @@
 
 .modal__product-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
 }
 
 .modal__image {
-  width: 30%;
+  width: 40%;
 }
 
 @media screen and (min-width: 480px) {
   .modal {
     &__image {
-      width: 60%;
+      width: 50%;
     }
   }
 }
