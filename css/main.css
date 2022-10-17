@@ -767,9 +767,11 @@ picture img#pic4 {
   background: rgb(255, 255, 255);
   border: none;
   border-radius: 50%;
+  transition: 250ms ease;
 }
 .product-button:hover {
   background-color: rgb(212, 20, 67);
+  transition: 250ms ease;
   cursor: pointer;
 }
 .product-button:hover .product-button__icon {
@@ -1880,83 +1882,73 @@ picture img#pic4 {
   }
 }
 .button {
-  border: transparent;
+  font-family: DM Sans;
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
   cursor: pointer;
-  background-color: #fff;
+  border: transparent;
   border-radius: 22px;
   padding: 11px 37px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  text-align: center;
-  color: #d41443;
 }
 .button-contacts {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin-top: 54px;
-}
-@media screen and (max-width: 767.9px) {
-  .button-contacts {
-    width: 250px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .button-contacts {
-    display: flex;
-    justify-content: center;
-    margin-top: 81px;
-  }
-}
-.button-contacts__locations {
-  color: #ffffff;
-  background-color: #d41443;
-}
-@media screen and (max-width: 767.9px) {
-  .button-contacts__locations {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .button-contacts__locations {
-    margin-right: 15px;
-  }
-}
-.button-contacts__locations:hover, .button-contacts__locations:focus {
-  background-color: #c7133e;
-}
-.button-contacts__franchise:hover, .button-contacts__franchise:focus {
-  background-color: #ecebeb;
-}
-.button-contacts--modification {
-  font-weight: 700;
-  min-width: 162px;
   padding: 11px 0px;
 }
-@media screen and (min-width: 768px) {
-  .button-contacts--modification {
-    min-width: 190px;
-  }
+.button-contacts__locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(212, 20, 67);
+  transition: 250ms ease;
 }
-@media screen and (min-width: 1280px) {
-  .button-contacts--modification {
-    min-width: 195px;
-    margin-top: 86px;
-  }
+.button-contacts__locations:hover, .button-contacts__locations:focus {
+  background-color: rgb(199, 19, 62);
+  transition: 250ms ease;
+}
+.button-contacts__franchise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  color: rgb(212, 20, 67);
+  background-color: rgb(255, 255, 255);
+  transition: 250ms ease;
+}
+.button-contacts__franchise:hover, .button-contacts__franchise:focus {
+  transition: 250ms ease;
+  background-color: rgb(236, 235, 235);
 }
 .button-contacts .button-contacts__svg {
   margin-left: 13px;
-  height: 9px;
-  width: 6px;
+  height: 8px;
+  width: 4px;
 }
 .button-contacts .button-contacts__svg--color-white {
-  fill: #ffffff;
+  fill: rgb(255, 255, 255);
 }
 .button-contacts .button-contacts__svg--color-red {
-  fill: #d41443;
+  fill: rgb(212, 20, 67);
 }
 
+@media screen and (min-width: 768px) {
+  .button-contacts {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2034,7 +2026,7 @@ picture img#pic4 {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
 }
 @media screen and (min-width: 768px) {
   .contacts__item {
@@ -2146,7 +2138,7 @@ picture img#pic4 {
   line-height: 16px;
   letter-spacing: 0.04em;
   text-decoration: none;
-  color: #907e82;
+  color: rgb(144, 126, 130);
   margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
@@ -2198,7 +2190,7 @@ picture img#pic4 {
 .contacts__work-time__primary-text {
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 .contacts__work-time__primary-text--before::before {
   content: "";
@@ -2206,7 +2198,7 @@ picture img#pic4 {
   top: 0%;
   width: 100%;
   height: 1px;
-  background-color: #907e82;
+  background-color: rgb(144, 126, 130);
 }
 .contacts__work-time__time--margin {
   margin-bottom: 10px;
@@ -2223,11 +2215,11 @@ picture img#pic4 {
   left: 0%;
   width: 100%;
   height: 1px;
-  background-color: #907e82;
+  background-color: rgb(144, 126, 130);
 }
 .contacts__work-time__time {
   font-weight: 500;
-  color: #ffa5ba;
+  color: rgb(255, 165, 186);
 }
 .contacts__link {
   font-family: DM Sans;
@@ -2239,7 +2231,7 @@ picture img#pic4 {
   line-height: 18px;
   letter-spacing: 0.04em;
   text-decoration: none;
-  color: #907e82;
+  color: rgb(144, 126, 130);
 }
 @media screen and (min-width: 768px) {
   .contacts__link {

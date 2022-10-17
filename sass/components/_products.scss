@@ -108,9 +108,10 @@
   background: $main-white;
   border: none;
   border-radius: 50%;
-
+  transition: 250ms ease;
   &:hover {
     background-color: $main-red;
+    transition: 250ms ease;
     cursor: pointer;
     .product-button__icon {
       fill: $main-white;
