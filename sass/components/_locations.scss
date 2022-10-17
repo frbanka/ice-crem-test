@@ -5,16 +5,14 @@
   border-radius: 22px;
   padding: 11px 37px;
   &-contacts {
-    display: flex;
+    @include flex-centered;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 54px;
     padding: 11px 0px;
     &__locations {
-      display: flex;
-      justify-content: center;
+      @include flex-centered;
       align-items: center;
       height: 44px;
       color: $main-white;
@@ -27,8 +25,7 @@
       }
     }
     &__franchise {
-      display: flex;
-      justify-content: center;
+      @include flex-centered;
       align-items: center;
       height: 44px;
       color: $main-red;

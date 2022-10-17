@@ -77,9 +77,8 @@
   }
 
   &__form {
-    display: flex;
+    @include flex-centered;
     flex-direction: column;
-    justify-content: center;
     gap: 40px;
   }
 
@@ -226,9 +225,8 @@
 }
 
 .modal__product-container {
-  display: flex;
+  @include flex-centered;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 5px;
 }
 

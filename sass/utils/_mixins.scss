@@ -19,3 +19,8 @@
   letter-spacing: $ls;
   text-decoration: $td;
 }
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+}

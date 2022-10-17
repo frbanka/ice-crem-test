@@ -4,13 +4,11 @@
   width: 100%;
   background-color: $bg-pink;
   position: relative;
-  display: flex;
-  justify-content: center;
+  @include flex-centered;
   align-items: center;
   &__section {
-    display: flex;
+    @include flex-centered;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   &__bg-img {
@@ -25,9 +23,8 @@
   &__head {
     position: relative;
     width: 200px;
-    display: flex;
+    @include flex-centered;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 125px;
     padding-bottom: 26px;
@@ -52,9 +49,8 @@
   }
 
   &__content {
-    display: flex;
+    @include flex-centered;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 

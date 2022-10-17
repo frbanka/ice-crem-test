@@ -1,8 +1,7 @@
 .customer-reviews {
   max-width: 1280px;
-  display: flex;
+  @include flex-centered;
   flex-direction: column;
-  justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   margin: 0 auto;

@@ -9,8 +9,7 @@
   overflow: hidden;
 }
 .contacts-section {
-  display: flex;
-  justify-content: center;
+  @include flex-centered;
   align-self: center;
   @media screen and (max-width: 1199px) {
     background: -webkit-linear-gradient(

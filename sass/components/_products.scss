@@ -100,8 +100,7 @@
 }
 
 .product-button {
-  display: flex;
-  justify-content: center;
+  @include flex-centered;
   align-items: center;
   width: 40px;
   height: 40px;
