@@ -11,6 +11,7 @@
   @include font($fw: 700, $ff: $dm-sans, $fs: 16px, $lh: 21px);
   align-self: center;
   color: $main-white;
+  border: none;
   border-radius: 22px;
   padding: 10px 37px;
   max-width: 160px;
@@ -49,7 +50,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   width: 80vw;
   height: 90vh;
   overflow: auto;
@@ -117,7 +118,7 @@
     .modal__input:focus ~ &,
     .modal__input:hover ~ & {
       color: $main-red;
-      transform: translateY(-8px);
+      transform: translateY(-1.5em);
       font-size: 0.8em;
       font-weight: 700;
     }
@@ -130,6 +131,14 @@
 
   &__item-checkbox {
     display: none;
+  }
+
+  &__name {
+    display: block;
+    color: $main-white;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
 
   &__option-inner {
@@ -158,14 +167,6 @@
         color: $main-green;
       }
     }
-  }
-
-  &__name {
-    display: block;
-    color: $main-white;
-    font-weight: 400;
-    text-transform: uppercase;
-    white-space: nowrap;
   }
 
   &__title {

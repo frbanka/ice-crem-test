@@ -198,7 +198,7 @@ a {
   background-color: rgb(225, 121, 146);
   z-index: 20;
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 .mobile-menu__button {
   position: relative;
@@ -228,14 +228,6 @@ a {
 .mobile-menu__center {
   display: flex;
   justify-content: center;
-}
-.mobile-menu__close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 21px;
-  right: 25px;
 }
 .mobile-menu__item {
   position: relative;
@@ -281,7 +273,7 @@ a {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   h1 {
     font-weight: 400;
     font-size: 22px;
@@ -2151,6 +2143,7 @@ picture img#pic4 {
   text-decoration: none;
   align-self: center;
   color: rgb(255, 255, 255);
+  border: none;
   border-radius: 22px;
   padding: 10px 37px;
   max-width: 160px;
@@ -2181,7 +2174,7 @@ picture img#pic4 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   width: 80vw;
   height: 90vh;
   overflow: auto;
@@ -2244,7 +2237,7 @@ picture img#pic4 {
 }
 .modal__input:valid ~ .modal__tag, .modal__input:focus ~ .modal__tag, .modal__input:hover ~ .modal__tag {
   color: rgb(212, 20, 67);
-  transform: translateY(-8px);
+  transform: translateY(-1.5em);
   font-size: 0.8em;
   font-weight: 700;
 }
@@ -2254,6 +2247,13 @@ picture img#pic4 {
 }
 .modal__item-checkbox {
   display: none;
+}
+.modal__name {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 .modal__option-inner {
   display: inline-block;
@@ -2273,13 +2273,6 @@ picture img#pic4 {
 }
 .modal__item-checkbox:checked ~ .modal__option-inner .modal__name {
   color: rgb(194, 226, 151);
-}
-.modal__name {
-  display: block;
-  color: rgb(255, 255, 255);
-  font-weight: 400;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 .modal__title {
   font-family: Titan One;
