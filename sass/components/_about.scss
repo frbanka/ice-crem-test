@@ -36,11 +36,7 @@
 
   &__label {
     position: relative;
-    font-family: $titan-one;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    @include font($fs: 18px, $lh: 21px, $ff: $titan-one, $fw: 400);
     text-transform: uppercase;
     color: $main-pink;
     padding-bottom: 15px;
@@ -49,13 +45,7 @@
 
   &__title {
     position: relative;
-    text-align: center;
-    font-family: $titan-one;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 39px;
-    letter-spacing: 0.04em;
+    @include font($fs: 34px, $lh: 39px, $ff: $titan-one, $fw: 400);
     text-transform: uppercase;
     color: $main-red;
     z-index: 2;
@@ -87,11 +77,7 @@
   &__intro {
     position: relative;
     min-width: 220px;
-    font-family: $dm-sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
+    @include font($fs: 12px, $lh: 19px, $ff: $dm-sans, $fw: 500, $tal: left);
     color: $main-black;
     margin-bottom: 47px;
     z-index: 2;
@@ -100,148 +86,134 @@
   &__paragraph {
     position: relative;
     min-width: 220px;
-    font-family: $dm-sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
+    @include font($fs: 12px, $lh: 19px, $ff: $dm-sans, $fw: 500, $tal: left);
     color: $dark-gray;
     z-index: 2;
   }
 
   &__btn {
-    margin-top: 47px;
-    width: 176px;
-    height: 44px;
+    @include font($fs: 14px, $lh: 18px, $ff: $dm-sans, $fw: 700);
+    color: $main-red;
     background-color: $main-white;
     border-radius: 22px;
     border: none;
-    font-family: $dm-sans;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: $main-red;
     cursor: pointer;
+    margin-top: 47px;
+    width: 176px;
+    height: 44px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
     &:focus {
       background-color: $btn-gray;
     }
   }
 }
-
 // TABLET
-
 @media screen and (min-width: 768px) {
   .about {
     min-width: 772px;
     &__background {
       display: none;
     }
-
     &__head {
       width: 440px;
       padding-top: 130px;
       padding-bottom: 50px;
     }
-
     &__label {
-      font-size: 26px;
-      line-height: 30px;
+      @include font(
+        $fs: 26px,
+        $lh: 30px,
+        $ff: $titan-one,
+        $fw: 400,
+        $tt: uppercase
+      );
       padding-bottom: 16px;
     }
-
     &__title {
-      font-size: 48px;
-      line-height: 55px;
+      @include font(
+        $fs: 48px,
+        $lh: 55px,
+        $ff: $titan-one,
+        $fw: 400,
+        $tt: uppercase
+      );
     }
-
     &__content {
       display: flex;
       flex-direction: row;
     }
-
     &__img {
       width: 340px;
       height: 339px;
       padding: 0;
     }
-
     &__items {
       padding: 50px 36px 0 17px;
     }
-
     &__intro {
+      @include font($fs: 14px, $lh: 25px, $ff: $dm-sans, $fw: 500, $tal: left);
       max-width: 463px;
       margin-bottom: 49px;
-      font-size: 14px;
-      line-height: 25px;
     }
-
     &__paragraph {
+      @include font($fs: 14px, $lh: 25px, $ff: $dm-sans, $fw: 500, $tal: left);
       max-width: 463px;
-      font-size: 14px;
-      line-height: 25px;
     }
-
     &__btn {
       margin-top: 62px;
     }
   }
 }
-
 // DESKTOP
-
 @media screen and (min-width: 1200px) {
   .about {
     &__bg-img {
       display: block;
       top: 25%;
     }
-
     &__head {
       width: 534px;
       padding-top: 125px;
       padding-bottom: 55px;
     }
-
     &__label {
-      font-size: 30px;
-      line-height: 34px;
+      @include font(
+        $fs: 30px,
+        $lh: 34px,
+        $ff: $titan-one,
+        $fw: 400,
+        $tt: uppercase
+      );
       padding-bottom: 15px;
     }
-
     &__title {
-      font-size: 58px;
-      line-height: 66px;
+      @include font(
+        $fs: 58px,
+        $lh: 66px,
+        $ff: $titan-one,
+        $fw: 400,
+        $tt: uppercase
+      );
     }
-
     &__img {
       width: 516px;
       height: 516px;
     }
-
     &__items {
       padding: 55px 115px 0 74px;
     }
-
     &__intro {
+      @include font($fs: 16px, $lh: 28px, $ff: $dm-sans, $fw: 500, $tal: left);
       width: 463px;
       height: 79px;
-      font-size: 16px;
-      line-height: 28px;
       margin-bottom: 35px;
     }
-
     &__paragraph {
+      @include font($fs: 14px, $lh: 27px, $ff: $dm-sans, $fw: 500, $tal: left);
       width: 463px;
       height: 155px;
-      font-size: 14px;
-      line-height: 27px;
     }
-
     &__btn {
       margin-top: 45px;
     }

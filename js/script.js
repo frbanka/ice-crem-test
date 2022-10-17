@@ -1,21 +1,16 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+function myFunction(d, p, b) {
+  var x = document.getElementById(d);
+  var y = document.getElementById(p);
+  var m = document.getElementById(b);
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {
-    slideIndex = 1;
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+    m.style.backgroundImage = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+    m.style.backgroundImage =
+      'url("https://ewamazurek.github.io/Ice-Cream-2-Products/images/test1.png")';
   }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex - 1].style.display = "block";
 }
