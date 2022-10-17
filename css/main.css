@@ -213,7 +213,7 @@ a {
   letter-spacing: 0.04em;
   text-decoration: none;
   color: rgb(212, 20, 67);
-  width: 209px;
+  width: 160px;
   height: 44px;
   background: rgb(255, 255, 255);
   border-radius: 22px;
@@ -325,7 +325,7 @@ a {
     width: 324px;
     height: 322px;
     left: 307px;
-    top: -60px;
+    top: -55px;
   }
   .header__banner-background picture#pic2 {
     position: absolute;
@@ -333,7 +333,7 @@ a {
     width: 143px;
     height: 336px;
     left: 378px;
-    top: -37px;
+    top: -30px;
   }
   .header__banner-title {
     max-width: 162px;
@@ -418,7 +418,7 @@ figcaption {
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
-  line-height: 150%;
+  line-height: 12px;
   color: rgb(255, 255, 255);
 }
 
@@ -426,7 +426,7 @@ picture img#pic4 {
   z-index: 4;
   position: absolute;
   width: 168px;
-  height: auto;
+  height: 133px;
   bottom: 0;
   right: 34px;
 }
@@ -458,6 +458,9 @@ picture img#pic4 {
     height: 665px;
     padding: 0;
     padding-top: 37px;
+  }
+  .header__counters-container {
+    padding-top: 60px;
   }
   .header__counter-container {
     position: relative;
@@ -526,9 +529,13 @@ picture img#pic4 {
     width: 200px;
     height: 48px;
     font-size: 14px;
+    line-height: 20px;
   }
   .header__tablet-desktop-icons picture img#pic4 {
-    width: 200px;
+    position: relative;
+    width: 293px;
+    height: 232px;
+    left: 900px;
   }
   .header__burger {
     display: none;
@@ -561,7 +568,7 @@ picture img#pic4 {
     width: 236px;
     height: 557px;
     left: 594px;
-    bottom: 0px;
+    top: 15px;
   }
   .header__banner-title {
     max-width: 277px;
@@ -593,7 +600,8 @@ picture img#pic4 {
     height: 26px;
   }
   .mobile-menu__button {
-    margin-right: 115px;
+    margin-right: 80px;
+    margin-left: 75px;
   }
   .menu__list {
     list-style: none;
@@ -619,6 +627,9 @@ picture img#pic4 {
   }
   .menu__item > a:hover {
     color: rgb(212, 20, 67);
+  }
+  .menu__item#menu-first {
+    padding-left: 65px;
   }
   .mobile-menu__button:hover {
     background: rgb(236, 235, 235);
@@ -2489,6 +2500,7 @@ picture img#pic4 {
 
 .modal__image {
   width: 40%;
+  display: inline-block;
 }
 
 @media screen and (min-width: 480px) {
