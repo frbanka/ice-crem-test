@@ -197,8 +197,9 @@ a {
   padding: 60px 0px 0px 0px;
   background-color: rgb(225, 121, 146);
   z-index: 20;
+  visibility: hidden;
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .mobile-menu__button {
   position: relative;
@@ -213,7 +214,7 @@ a {
   letter-spacing: 0.04em;
   text-decoration: none;
   color: rgb(212, 20, 67);
-  width: 160px;
+  width: 209px;
   height: 44px;
   background: rgb(255, 255, 255);
   border-radius: 22px;
@@ -228,14 +229,7 @@ a {
 .mobile-menu__center {
   display: flex;
   justify-content: center;
-}
-.mobile-menu__close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 21px;
-  right: 25px;
+  align-items: center;
 }
 .mobile-menu__item {
   position: relative;
@@ -257,10 +251,10 @@ a {
   display: flex;
   width: 100%;
   height: 42px;
-  border-top: 1px solid #E18298;
+  border-top: 1px solid #e18298;
 }
 .mobile-menu__links-item:nth-child(5) {
-  border-bottom: 1px solid #E18298;
+  border-bottom: 1px solid #e18298;
 }
 .mobile-menu__link {
   display: flex;
@@ -279,6 +273,7 @@ a {
 
 .mobile-menu.is-open {
   transform: translateX(0);
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -301,6 +296,12 @@ a {
     z-index: 20;
     transform: translatey(100%);
     transition: transform 250ms ease-in-out;
+  }
+  .mobile-menu__button {
+    width: 186px;
+  }
+  .mobile-menu__button#desktop-pc {
+    width: 160px;
   }
   .header {
     height: 399px;
@@ -439,7 +440,7 @@ picture img#pic4 {
   }
 }
 @media screen and (max-width: 768px) {
-  .mobile-menu__button {
+  .mobile-menu__button#desktop-pc {
     display: none;
     visibility: none;
   }
@@ -2277,6 +2278,188 @@ picture img#pic4 {
   }
 }
 
+.footer {
+  font-family: DM Sans;
+  width: 100%;
+  background-color: rgb(255, 245, 246);
+  margin: 0 auto;
+  padding-top: 113px;
+}
+.footer__text-upercasse {
+  margin-left: 22px;
+  margin-right: 66px;
+  text-transform: uppercase;
+}
+.footer__text-one {
+  font-family: Titan One;
+  color: rgb(255, 165, 186);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 4%;
+  margin-top: 165px;
+}
+.footer__text-two {
+  font-family: Titan One;
+  color: rgb(212, 20, 67);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 4%;
+}
+.footer__icons {
+  position: relative;
+  display: flex;
+  right: 20px;
+  justify-content: end;
+  margin-top: 43px;
+  gap: 30px;
+  list-style-type: none;
+}
+.footer__icon {
+  fill: rgb(255, 255, 255);
+  position: relative;
+  height: 25px;
+  top: 8px;
+}
+.footer__icon--padding {
+  left: -2px;
+}
+.footer__list {
+  background-color: rgb(255, 165, 186);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.footer__contact {
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 46px;
+  margin-bottom: 43px;
+}
+.footer__contact--phone {
+  color: rgb(212, 20, 67);
+  text-decoration: none;
+}
+.footer__contact p {
+  position: relative;
+  left: 47px;
+}
+.footer__signature {
+  text-align: center;
+}
+.footer__signature p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  border-top: solid 1px rgb(225, 225, 225);
+  color: rgb(144, 126, 130);
+  padding: 9px 91px 9px 82px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 165px;
+  }
+  .footer__text-upercasse {
+    margin-left: 22px;
+    margin-right: 66px;
+    text-transform: uppercase;
+    width: 350px;
+  }
+  .footer__text-one {
+    font-family: Titan One;
+    color: rgb(255, 165, 186);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 4%;
+    margin-top: 165px;
+  }
+  .footer__text-two {
+    font-family: Titan One;
+    color: rgb(212, 20, 67);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+  }
+  .footer__icons {
+    right: 36px;
+    margin-top: -252px;
+    gap: 30px;
+  }
+  .footer__contact {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26.04px;
+    text-align: right;
+    margin-right: 39px;
+    margin-top: 65px;
+    padding-bottom: 120px;
+  }
+  .footer__contact--phone {
+    color: rgb(212, 20, 67);
+  }
+  .footer__contact p {
+    position: relative;
+    left: 47px;
+  }
+  .footer__signature {
+    margin-top: 63px;
+  }
+  .footer__signature p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    border-top: solid 1px rgb(225, 225, 225);
+    color: rgb(144, 126, 130);
+    padding: 9px 91px 9px 82px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__text-upercasse {
+    margin-left: 114px;
+    width: 450px;
+  }
+  .footer__text-one {
+    font-family: Titan One;
+    color: rgb(255, 165, 186);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  .footer__text-two {
+    font-family: Titan One;
+    color: rgb(212, 20, 67);
+    font-size: 58px;
+    line-height: 55px;
+    margin-top: 15px;
+  }
+  .footer__icons {
+    right: 36px;
+    margin-right: 85px;
+    margin-top: -152px;
+    gap: 30px;
+  }
+  .footer__contact {
+    font-size: 16px;
+    line-height: 29.76px;
+    margin-right: 85px;
+    margin-top: 37px;
+    padding-bottom: 12px;
+  }
+  .footer__contact--phone {
+    color: rgb(212, 20, 67);
+  }
+  .footer__contact p {
+    position: relative;
+    left: 47px;
+  }
+}
 .backdrop {
   position: fixed;
   z-index: 25;
@@ -2299,6 +2482,7 @@ picture img#pic4 {
   text-decoration: none;
   align-self: center;
   color: rgb(255, 255, 255);
+  border: none;
   border-radius: 22px;
   padding: 10px 37px;
   max-width: 160px;
@@ -2329,8 +2513,8 @@ picture img#pic4 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   width: 80vw;
   height: 90vh;
   overflow: auto;
@@ -2393,7 +2577,7 @@ picture img#pic4 {
 }
 .modal__input:valid ~ .modal__tag, .modal__input:focus ~ .modal__tag, .modal__input:hover ~ .modal__tag {
   color: rgb(212, 20, 67);
-  transform: translateY(-8px);
+  transform: translateY(-1.5em);
   font-size: 0.8em;
   font-weight: 700;
 }
@@ -2403,6 +2587,13 @@ picture img#pic4 {
 }
 .modal__item-checkbox {
   display: none;
+}
+.modal__name {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 .modal__option-inner {
   display: inline-block;
